@@ -1,0 +1,58 @@
+.homepage-sitebanner {
+  height: 72vh;
+}
+
+.sitename, .tagline {
+  text-align: center;
+}
+
+.carousel, .carousel-item, .carousel-item .active, .carousel-inner {
+  height: 100%;
+  perspective: none;
+}
+
+.carousel-inner {
+  position: relative;
+}
+.carousel-inner .play-vid {
+  top: 60%;
+  display: flex;
+  justify-content: center;
+}
+.carousel-inner .play-vid .play-btn {
+  display: flex;
+}
+.carousel-inner .play-vid .play-btn h1 {
+  font-weight: 700;
+  border-radius: 2rem;
+  border: solid 0.1rem white;
+  background-color: rgba(66, 162, 170, 0.4);
+  padding: 0.7rem 1.2rem;
+}
+.carousel-inner .play-vid .play-btn a {
+  color: white;
+}
+
+.carousel-fade .carousel-item {
+  transition-duration: 1s;
+}
+.carousel-fade .carousel-item img {
+  height: 100%;
+  perspective: none;
+}
+
+.sect1 {
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+}
+.sect1 .social, .sect1 .blog, .sect1 .events, .sect1 .opportunities {
+  height: 100%;
+  width: 25%;
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=homepage.css.map */

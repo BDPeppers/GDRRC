@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-bottom: 0;
+}
+ul li {
+  color: white;
+}
+
+input {
+  outline: none;
+}
+
+.siteheader {
+  height: 8vh;
+  background-color: #00246a;
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid white 0.2rem;
+  border-top: white solid 0.1rem;
+}
+
+.header-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.logo {
+  flex-basis: 30%;
+  height: 100%;
+  position: relative;
+  perspective: 100rem;
+  justify-content: flex-end;
+  top: -1rem;
+}
+.logo img {
+  height: 200%;
+  width: 50%;
+}
+
+.snbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 70%;
+  justify-content: flex-end;
+}
+
+.desktop-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.desktop-nav ul.desktop-nav-list {
+  height: 100%;
+  justify-content: flex-end;
+  position: relative;
+}
+.desktop-nav ul.desktop-nav-list .d-nav-link:not(:last-child):hover {
+  background-color: rgba(66, 162, 170, 0.3);
+}
+.desktop-nav ul.desktop-nav-list .d-nav-link {
+  font-size: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.desktop-nav ul.desktop-nav-list .d-nav-link:not(:last-child) {
+  border-right: 0.1rem white solid;
+  border-left: 0.1rem white solid;
+  display: block;
+}
+.desktop-nav ul.desktop-nav-list .d-nav-link:not(:last-child) .dropdown {
+  display: none;
+}
+.desktop-nav ul.desktop-nav-list .d-nav-link:not(:last-child) .nav-btn {
+  text-align: center;
+  color: white;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+.desktop-nav ul.desktop-nav-list .d-nav-link:hover .nav-btn {
+  position: relative;
+}
+.desktop-nav ul.desktop-nav-list .d-nav-link:hover .dropdown {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  position: absolute;
+  min-width: 20rem;
+  box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: rgba(66, 162, 170, 0.8);
+  clear: both;
+}
+.desktop-nav ul.desktop-nav-list .d-nav-link:hover .dropdown .dropdown-link {
+  border: 0.1rem solid white;
+  padding: 0.5rem 1rem;
+}
+.desktop-nav ul.desktop-nav-list .d-nav-link:hover .dropdown .dropdown-link:hover {
+  background-color: #42a2aa;
+}
+.desktop-nav ul.desktop-nav-list div.search-bar {
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.desktop-nav ul.desktop-nav-list div.search-bar input.search-input {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding: 1rem;
+  border-right: 0.175rem solid #42a2aa;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+.desktop-nav ul.desktop-nav-list div.search-bar input[type=text]:focus {
+  box-shadow: 0 0 0.5rem #51cbee;
+}
+.desktop-nav ul.desktop-nav-list div.search-bar .search-btn {
+  color: #42a2aa;
+  padding: 0.7rem 0.5rem;
+  font-size: 2rem;
+}
+
+.homepage-sitebanner {
+  height: 72vh;
+}
+
+.sitename, .tagline {
+  text-align: center;
+}
+
+.carousel, .carousel-item, .carousel-item .active, .carousel-inner {
+  height: 100%;
+  perspective: none;
+}
+
+.carousel-inner {
+  position: relative;
+}
+.carousel-inner .play-vid {
+  top: 60%;
+  display: flex;
+  justify-content: center;
+}
+.carousel-inner .play-vid .play-btn {
+  display: flex;
+}
+.carousel-inner .play-vid .play-btn h1 {
+  font-weight: 700;
+  border-radius: 2rem;
+  border: solid 0.1rem white;
+  background-color: rgba(66, 162, 170, 0.4);
+  padding: 0.7rem 1.2rem;
+}
+.carousel-inner .play-vid .play-btn a {
+  color: white;
+}
+
+.carousel-fade .carousel-item {
+  transition-duration: 1s;
+}
+.carousel-fade .carousel-item img {
+  height: 100%;
+  perspective: none;
+}
+
+.sect1 {
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+}
+.sect1 .social, .sect1 .blog, .sect1 .events, .sect1 .opportunities {
+  height: 100%;
+  width: 25%;
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=main.css.map */

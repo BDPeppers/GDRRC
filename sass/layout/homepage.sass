@@ -1,0 +1,46 @@
+@import "../abstracts/variables"
+@import "../abstracts/mfe"
+
+//Site Banner
+.homepage-sitebanner
+    height: $banner
+.sitename, .tagline
+    text-align: center
+.carousel, .carousel-item, .carousel-item .active, .carousel-inner
+    height: 100%
+    perspective: none
+.carousel-inner
+    position: relative
+    .play-vid
+        top: 60%
+        display: flex
+        justify-content: center
+        .play-btn
+            display: flex
+            h1
+                font-weight: 700
+                border-radius: 2rem
+                border: solid .1rem $white
+                background-color: rgba(66,162,170,.4)
+                padding: .7rem 1.2rem
+            a
+                color: $white
+        
+.carousel-fade .carousel-item
+    transition-duration: 1s
+    img
+        height: 100%
+        perspective: none
+
+//Section One
+.sect1
+    height: 20vh
+    @include display(row)
+    @include sect
+    .social, .blog, .events, .opportunities
+        height: 100%
+        width: 25%
+        border: 1px solid red
+
+
+//MOBILE VIEW

@@ -32,6 +32,9 @@
 .carousel-inner .play-vid .play-btn a {
   color: white;
 }
+.carousel-inner .play-vid .play-btn h1:hover {
+  background-color: #42a2aa;
+}
 
 .carousel-fade .carousel-item {
   transition-duration: 1s;
@@ -42,16 +45,17 @@
 }
 
 .sect1 {
-  height: 20vh;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
   width: 100%;
   max-width: 130rem;
+  flex-wrap: wrap;
 }
-.sect1 .social, .sect1 .blog, .sect1 .events, .sect1 .opportunities {
+.sect1 .social-blog, .sect1 .events, .sect1 .knowledge, .sect1 .community {
+  min-height: 40vh;
   height: 100%;
-  width: 25%;
+  width: 50%;
   border: 1px solid red;
 }
 

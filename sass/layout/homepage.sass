@@ -25,22 +25,27 @@
                 padding: .7rem 1.2rem
             a
                 color: $white
-        
+            h1:hover
+                background-color: $green
 .carousel-fade .carousel-item
     transition-duration: 1s
     img
         height: 100%
         perspective: none
 
-//Section One
+//Section One - Community Sections
 .sect1
-    height: 20vh
     @include display(row)
     @include sect
-    .social, .blog, .events, .opportunities
+    flex-wrap: wrap
+    .social-blog, .events, .knowledge, .community
+        min-height: 40vh
         height: 100%
-        width: 25%
+        width: 50%
         border: 1px solid red
+
+
+
 
 
 //MOBILE VIEW

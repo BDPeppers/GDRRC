@@ -111,14 +111,12 @@ input {
 }
 .desktop-nav ul.desktop-nav-list .d-nav-link:hover .dropdown {
   display: flex;
-  flex-basis: 100%;
   flex-direction: column;
   position: absolute;
   min-width: 20rem;
   box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
   z-index: 1;
   background-color: rgba(66, 162, 170, 0.8);
-  clear: both;
 }
 .desktop-nav ul.desktop-nav-list .d-nav-link:hover .dropdown .dropdown-link {
   border: 0.1rem solid white;
@@ -151,6 +149,9 @@ input {
   color: #42a2aa;
   padding: 0.7rem 0.5rem;
   font-size: 2rem;
+}
+.desktop-nav ul.desktop-nav-list div.search-bar .search-btn:hover {
+  color: rgba(66, 162, 170, 0.8);
 }
 
 .homepage-sitebanner {
@@ -187,6 +188,9 @@ input {
 .carousel-inner .play-vid .play-btn a {
   color: white;
 }
+.carousel-inner .play-vid .play-btn h1:hover {
+  background-color: #42a2aa;
+}
 
 .carousel-fade .carousel-item {
   transition-duration: 1s;
@@ -197,16 +201,17 @@ input {
 }
 
 .sect1 {
-  height: 20vh;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
   width: 100%;
   max-width: 130rem;
+  flex-wrap: wrap;
 }
-.sect1 .social, .sect1 .blog, .sect1 .events, .sect1 .opportunities {
+.sect1 .social-blog, .sect1 .events, .sect1 .knowledge, .sect1 .community {
+  min-height: 40vh;
   height: 100%;
-  width: 25%;
+  width: 50%;
   border: 1px solid red;
 }
 

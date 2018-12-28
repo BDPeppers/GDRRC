@@ -83,14 +83,12 @@
 }
 .desktop-nav ul.desktop-nav-list .d-nav-link:hover .dropdown {
   display: flex;
-  flex-basis: 100%;
   flex-direction: column;
   position: absolute;
   min-width: 20rem;
   box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
   z-index: 1;
   background-color: rgba(66, 162, 170, 0.8);
-  clear: both;
 }
 .desktop-nav ul.desktop-nav-list .d-nav-link:hover .dropdown .dropdown-link {
   border: 0.1rem solid white;
@@ -123,6 +121,9 @@
   color: #42a2aa;
   padding: 0.7rem 0.5rem;
   font-size: 2rem;
+}
+.desktop-nav ul.desktop-nav-list div.search-bar .search-btn:hover {
+  color: rgba(66, 162, 170, 0.8);
 }
 
 /*# sourceMappingURL=header.css.map */

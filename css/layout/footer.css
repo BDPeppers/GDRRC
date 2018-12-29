@@ -1,3 +1,10 @@
-
+footer {
+  height: 10vh;
+  background-color: #00246a;
+}
+footer h1 {
+  text-align: center;
+  color: white;
+}
 
 /*# sourceMappingURL=footer.css.map */

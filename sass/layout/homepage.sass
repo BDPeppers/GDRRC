@@ -2,8 +2,10 @@
 @import "../abstracts/mfe"
 
 //Site Banner
+    
 .homepage-sitebanner
     height: $banner
+    border-bottom: white solid .5rem
 .sitename, .tagline
     text-align: center
 .carousel, .carousel-item, .carousel-item .active, .carousel-inner
@@ -26,23 +28,159 @@
             a
                 color: $white
             h1:hover
-                background-color: $green
+                background-color: rgba($green,.7)
 .carousel-fade .carousel-item
     transition-duration: 1s
     img
         height: 100%
         perspective: none
+//Site Beam
+.site-beam
+    background-color: $blue
+    height: 8vh
+    //arrow styling
+.down-arrow
+    width: 0
+    height: 0
+    left: 48%
+    perspective: 2000rem
+    z-index: 1
+    position: absolute
+    border-left: 2rem solid transparent
+    border-right: 2rem solid transparent
+    border-top: 2rem solid $blue
 
-//Section One - Community Sections
-.sect1
+   
+//Sections
+//baase styles
+.sect
     @include display(row)
     @include sect
     flex-wrap: wrap
+    padding: 7rem 0
+.sect-wrapper1
+    position: relative
+    background: linear-gradient(0deg, rgba($white,1) 15%, rgba($green,.25) 97%)
+.sect-wrapper2
+    // background: linear-gradient(0deg, rgba($green,.25) 0%, rgba($white,1) 97%)
+.sect-wrapper3
+    // background: linear-gradient(0deg, rgba($white,1) 15%, rgba($green,.25) 97%)
+    background: linear-gradient(0deg, rgba($green,.25) 0%, rgba($white,1) 97%)
+//Section One - Community Sections
+.sect1
     .social-blog, .events, .knowledge, .community
-        min-height: 40vh
         height: 100%
         width: 50%
-        border: 1px solid red
+        @include display(column)
+        text-align: center
+        justify-content: center
+    i
+        color: $green
+        font-size: 5rem
+        padding-bottom: 1rem 
+
+    h1.cheader
+        font-size: 3rem
+        padding-bottom: 1rem
+        color: $blue 
+    p.description
+        font-size: 1.3rem
+        padding-bottom: 1rem 
+        flex-basis: 100%
+        a
+            color: black
+            font-weight: 700
+        a:hover
+            text-decoration: underline
+//Box styles
+.icon-box
+    @include display(row)
+    flex-wrap: wrap
+    justify-content: center
+    width: 75%
+    margin: auto
+    a.icon-link
+        padding: 0 1rem
+    a.icon-link:hover
+        transform: translateY(-.2rem)
+
+//Section Two - How to Participate
+.sect2
+    min-height: 40vh
+    @include display(column)
+    justify-content: center
+    h1.hpheader
+       font-size: 4rem
+       color: $blue
+       text-align: center
+       padding-bottom: 1rem
+    p.description
+        font-size: 1.5rem
+        text-align: center
+        width: 75%
+        margin: auto
+    div.participation-links
+        padding-top: 1.5rem
+        width: 75%
+        @include display(row)
+        justify-content: space-between
+        flex-wrap: wrap
+        margin: auto
+        a.globe
+            flex-basis: 100%
+            text-align: center
+            padding: 1rem 0
+        a.globe:hover
+            animation: rotation 1s
+
+        i
+            font-size: 10rem
+            color: $green  
+        h2.plink
+            font-size: 2.5rem
+            a
+                color: $blue
+            a:hover
+                text-decoration: underline
+.sect3
+    .pheader
+        font-size: 4rem
+        text-align: center
+        flex-basis: 100%
+        color: $blue
+    div.partners
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: baseline
+        width: 100%
+        margin: 2rem 0
+        a.partner
+            width: 30rem
+            height: 18rem
+            display: flex
+            align-self: center
+            justify-content: center
+            img.aba
+                height: 80%
+                margin-top: 3rem
+            img.aciam
+                height: 75%
+            img.gsu
+                height: 80%
+    p.description
+        padding-top: 1rem
+        font-size: 1.5rem
+        width: 75%
+        margin: auto
+        text-align: center
+
+
+             
+
+   
+    
+
 
 
 

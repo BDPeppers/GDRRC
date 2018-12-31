@@ -156,7 +156,7 @@ footer h1 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  min-width: 20rem;
+  min-width: 30rem;
   box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
   z-index: 1;
   background-color: rgba(66, 162, 170, 0.8);
@@ -197,6 +197,133 @@ footer h1 {
   color: rgba(66, 162, 170, 0.8);
 }
 
+navigation.mobile-nav {
+  display: none;
+}
+navigation.mobile-nav ul.mobile-dropdown-L2 {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  header.siteheader {
+    height: auto;
+  }
+
+  div.snbar-wrapper {
+    display: none;
+  }
+
+  navigation.desktop-nav {
+    display: none;
+  }
+
+  div.logo {
+    display: none;
+  }
+
+  navigation.mobile-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  navigation.mobile-nav ul.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  navigation.mobile-nav .m-nav-link {
+    border-top: white solid 0.075rem;
+    font-size: 2rem;
+    display: block;
+  }
+  navigation.mobile-nav .m-nav-link a {
+    font-size: 3.5rem;
+  }
+  navigation.mobile-nav .m-nav-link a.menu-btn {
+    padding-left: 0.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  navigation.mobile-nav .m-nav-link a.menu-btn i.fas {
+    padding-right: 0.5rem;
+  }
+  navigation.mobile-nav ul.mobile-dropdown {
+    display: none;
+  }
+  navigation.mobile-nav div.search-bar {
+    display: flex;
+    background-color: white;
+    border-radius: 2rem;
+    align-items: center;
+    padding-left: 0.5rem;
+    width: fit-content;
+    margin: 0.5rem 0;
+  }
+  navigation.mobile-nav div.search-bar a.search-btn {
+    font-size: 1.5rem;
+  }
+  navigation.mobile-nav div.search-bar input.search-input {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem;
+    border-right: 0.175rem solid #42a2aa;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    width: 50vw;
+  }
+  navigation.mobile-nav div.search-bar input[type=text]:focus {
+    box-shadow: 0 0 0.5rem #51cbee;
+  }
+  navigation.mobile-nav div.search-bar .search-btn {
+    color: #42a2aa;
+    padding: 0.7rem 0.5rem;
+    font-size: 2rem;
+  }
+  navigation.mobile-nav div.search-bar .search-btn:hover {
+    color: rgba(66, 162, 170, 0.8);
+  }
+
+  .mobile-dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-dropdown li.L1 {
+    border-top: white solid 0.1rem;
+    border-bottom: white solid 0.1rem;
+    font-size: 2.5rem;
+    background-color: rgba(66, 162, 170, 0.2);
+    display: block;
+    width: 100%;
+  }
+  .mobile-dropdown li.L1 a.L1-link {
+    font-size: 2.5rem;
+    display: block;
+    width: 100%;
+    padding-left: 3rem;
+  }
+  .mobile-dropdown li.L1:hover {
+    background-color: rgba(66, 162, 170, 0.4);
+  }
+  .mobile-dropdown .mobile-dropdown-L2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-dropdown .mobile-dropdown-L2 li.L2 {
+    border-top: white solid 0.1rem;
+    font-size: 2rem;
+    background-color: rgba(66, 162, 170, 0.7);
+    background-color: #42a2aa;
+  }
+  .mobile-dropdown .mobile-dropdown-L2 li.L2 a.L2-link {
+    font-size: 2rem;
+    padding-left: 6rem;
+  }
+  .mobile-dropdown .mobile-dropdown-L2 li.L2:hover {
+    background-color: rgba(66, 162, 170, 0.7);
+  }
+}
 .homepage-sitebanner {
   height: 84vh;
   border-bottom: white solid 0.5rem;
@@ -209,6 +336,13 @@ footer h1 {
 .carousel, .carousel-item, .carousel-item .active, .carousel-inner {
   height: 100%;
   perspective: none;
+}
+
+.caption-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  border: white solid 0.1rem;
+  border-radius: 2rem;
 }
 
 .carousel-inner {
@@ -252,7 +386,7 @@ footer h1 {
 .down-arrow {
   width: 0;
   height: 0;
-  left: 48%;
+  left: 47%;
   perspective: 2000rem;
   z-index: 1;
   position: absolute;
@@ -412,6 +546,10 @@ footer h1 {
   width: 75%;
   margin: auto;
   text-align: center;
+}
+
+div.mobile-logo {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

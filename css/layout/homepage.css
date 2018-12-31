@@ -12,6 +12,13 @@
   perspective: none;
 }
 
+.caption-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  border: white solid 0.1rem;
+  border-radius: 2rem;
+}
+
 .carousel-inner {
   position: relative;
 }
@@ -53,7 +60,7 @@
 .down-arrow {
   width: 0;
   height: 0;
-  left: 48%;
+  left: 47%;
   perspective: 2000rem;
   z-index: 1;
   position: absolute;
@@ -213,6 +220,10 @@
   width: 75%;
   margin: auto;
   text-align: center;
+}
+
+div.mobile-logo {
+  display: none;
 }
 
 /*# sourceMappingURL=homepage.css.map */

@@ -52,6 +52,8 @@
                                 <li class="dropdown-link"><a href="#">Maps</a></li>
                                 <li class="dropdown-link"><a href="#">Country List</a></li>
                                 <li class="dropdown-link"><a href="#">Organizations</a></li>
+                                <li class="dropdown-link"><a href="#">Submission Form</a></li>
+
                             </ul>
                         </li>
                         <li class="d-nav-link">
@@ -75,8 +77,65 @@
                 </navigation>
             </div>
 
+            <!-- ##### MOBILE NAVIGATION ###### -->
+            <navigation class="mobile-nav">
+
+                <ul class="mobile-nav-list">
+                    <li class="m-nav-link">
+                        <a href="#" id="menu-toggle-btn" class="menu-btn">
+                            <i id="menu-toggle" class="fas fa-bars"></i>
+                            Menu
+                        </a>
+                        <ul class="mobile-dropdown">
+                            <li class="L1">
+                                <a class="L1-link" id="DD-L2-Community">Community</a>
+                                <ul class="mobile-dropdown-L2" id="Community">
+                                    <li class="L2"><a class="L2-link" href="#">Network</a></li>
+                                    <li class="L2"><a class="L2-link" href="#">Opportunities</a></li>
+                                    <li class="L2"><a class="L2-link" href="#">Events</a></li>
+                                    <li class="L2"><a class="L2-link" href="#">Contact Us</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="L1" id="DD-L2">
+                                <a class="L1-link" id="DD-L2-ADR">ADR Project</a>
+                                <ul class="mobile-dropdown-L2" id="ADR">
+                                    <li class="L2"><a class="L2-link" href="#">About</a></li>
+                                    <li class="L2"><a class="L2-link" href="#">Maps</a></li>
+                                    <li class="L2"><a class="L2-link" href="#">Country List</a></li>
+                                    <li class="L2"><a class="L2-link" href="#">Organizations</a></li>
+                                    <li class="L2"><a class="L2-link" href="#">Submission Form</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="L1" id="DD-L2">
+                                <a class="L1-link" id="DD-L2-ER">Educational Resources</a>
+                                <ul class="mobile-dropdown-L2" id="ER">
+                                    <li class="L2"><a class="L2-link" href="#">Degree Programs</a></li>
+                                    <li class="L2"><a class="L2-link" href="#">Glossary</a></li>
+                                    <li class="L2"><a class="L2-link" href="#">FAQ</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="L1">
+                                <a class="L1-link">Contribute</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="m-nav-link">
+                        <div class="search-bar">
+                            <input class="search-input" type="text" placeholder="Search...">
+                            <a href="#" class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+            </navigation>
+
         </div>
-        <!-- ##### MOBILE NAVIGATION ###### -->
+
 
     </header>
 
@@ -97,8 +156,12 @@
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="img/one.jpeg" alt="First slide">
                     <div class="carousel-caption">
-                        <h3>Slide One</h3>
-                        <h1>Sharing knowledge and building a community of practice worldwide</h1>
+                        <!-- <h3>Slide One</h3> -->
+                        <h1 class="caption-box">Nulla vel lacinia orci. Nulla vel porttitor odio. Mauris laoreet
+                            euismod magna. Aenean
+                            accumsan odio ut ante fringilla elementum. Praesent augue nunc, pharetra a tellus ornare,
+                            dictum mattis ligula. Proin fermentum efficitur rhoncus. Morbi consequat mauris a urna
+                            mattis tempor.</h1>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -109,13 +172,14 @@
                             </a></div>
                     </div>
                     <div class="carousel-caption">
-                        <h3>Slide Two</h3>
+                        <!-- <h3>Slide Two</h3> -->
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="img/three.jpeg" alt="Third slide">
                     <div class="carousel-caption">
-                        <h3>Slide Three</h3>
+                        <!-- <h3>Slide Three</h3> -->
+                        <h1 class="caption-box">Sharing knowledge and building a community of practice worldwide</h1>
                     </div>
                 </div>
             </div>
@@ -131,7 +195,9 @@
     </div>
 
     <div class="site-beam">
-
+        <div class="logo mobile-logo">
+            <a href="#"><img src="img/GDRRC.png"></a>
+        </div>
     </div>
     <div class="down-arrow"></div>
 
@@ -250,13 +316,15 @@
     </footer>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, Bootstrap JS, then custom JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="js/index.js" type="application/javascript"></script>
+
 </body>
 
 </html>

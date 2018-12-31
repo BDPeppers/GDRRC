@@ -77,7 +77,7 @@
             // flex-basis: 100%
             flex-direction: column
             position: absolute
-            min-width: 20rem
+            min-width: 30rem
             box-shadow: 0rem .8rem 1.6rem 0rem rgba(0,0,0,0.2)
             z-index: 1
             background-color: rgba($green, .8)
@@ -119,13 +119,104 @@
 //Search Button
     
 // Mobile View
+navigation.mobile-nav
+    display: none
+    ul.mobile-dropdown-L2
+        display: none
 
 
 @media screen and (max-width: 1024px)
 
 @media screen and (max-width: 800px)
+    header.siteheader
+        height: auto
+    
+    //mobile navigation
+    div.snbar-wrapper
+        display: none
+    navigation.desktop-nav
+        display: none
+    div.logo
+        display: none
+    
+    navigation.mobile-nav
+        @include display(row)
+        width: 100%
+        ul.mobile-nav-list
+            @include display(column)
+            width: 100%
+        .m-nav-link
+            border-top: white solid .075rem
+            font-size: 2rem
+            display: block
+            a
+                font-size: 3.5rem
+            a.menu-btn
+                padding-left: .5rem
+                height: 100%
+                display: flex
+                align-items: center
+                i.fas
+                    padding-right: .5rem
+        ul.mobile-dropdown
+            display: none
+        div.search-bar
+            display: flex
+            background-color: $white
+            border-radius: 2rem
+            align-items: center
+            padding-left: .5rem
+            width: fit-content
+            margin: .5rem 0
+            a.search-btn
+                font-size: 1.5rem
+            input.search-input
+                border-top-left-radius: 2rem
+                border-bottom-left-radius: 2rem
+                padding: 1rem
+                border-right: .175rem solid $green
+                border-left: 0
+                border-top: 0
+                border-bottom: 0 
+                width: 50vw
+            input[type=text]:focus
+                box-shadow: 0 0 .5rem rgba(81, 203, 238, 1)
+            .search-btn
+                color: $green
+                padding: .7rem .5rem
+                font-size: 2rem
+            .search-btn:hover
+                color: rgba($green,.8)
+    //Dropdown
+    .mobile-dropdown
+        @include display(column)
+        li.L1
+            border-top: white solid .1rem
+            border-bottom: white solid .1rem
+            font-size: 2.5rem
+            background-color: rgba($green, .2)
+            display: block
+            width: 100%
+            a.L1-link
+                font-size: 2.5rem
+                display: block
+                width: 100%
+                padding-left: 3rem
+        li.L1:hover
+            background-color: rgba($green, .4)
+        .mobile-dropdown-L2
+            @include display(column)
+            li.L2
+                border-top: white solid .1rem
+                font-size: 2rem
+                background-color: rgba($green,.7)
+                background-color: $green
+                a.L2-link
+                    font-size: 2rem
+                    padding-left: 6rem
+            li.L2:hover
+                background-color: rgba($green,.7)
  
-
 @media screen and (max-width: 425px)
 
 @media screen and (max-width: 375px)

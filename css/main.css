@@ -552,4 +552,41 @@ div.mobile-logo {
   display: none;
 }
 
+@media screen and (max-width: 800px) {
+  div.site-beam {
+    min-height: 8vh;
+    height: auto;
+    display: block;
+  }
+
+  div.mobile-logo {
+    display: flex;
+    top: 0;
+  }
+  div.mobile-logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+  }
+  div.mobile-logo a img {
+    height: 75%;
+  }
+
+  .sect2 div.participation-links h2.plink {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  div.sect h1.cheader {
+    font-size: 2.5rem;
+  }
+  div.sect .community {
+    margin-top: -8rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

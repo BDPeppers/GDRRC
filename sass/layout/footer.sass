@@ -2,8 +2,70 @@
 @import "../abstracts/mfe"
 
 footer
-    height: 10vh
+    min-height: 15vh
+    height: auto
     background-color: $blue
-    h1
+    ul
+        @include display(column)
+    div.footer-wrapper
+        @include sect
+        @include display(row)
+        padding: 3rem 0
+    h1.footer-sect-header
         text-align: center
         color: $white
+        width: 80%
+        border-bottom: white solid .1rem
+        margin: auto
+    div.footer-sect-1
+        flex-basis: 50%
+        @include display(column)
+        h1.gdrrc
+            text-align: center
+            color: $white
+        ul.copyright
+            margin: auto
+            text-align: center
+            width: 80%
+            padding: 1.5rem 0
+            li
+                padding: .5rem 0
+                font-size: 1.5rem
+        i.fas, i.fab
+            font-size: 3rem
+            padding: 1rem
+        div.footer-follow
+            flex-basis: 20%
+            ul.footer-follow-list
+                @include display(row)
+                justify-content: center
+    
+    div.footer-sect-2
+        flex-basis: 50%
+        div.footer-explore
+            @include display(row)
+            flex-wrap: wrap
+            justify-content: center
+        h1.footer-sect-header
+            flex-basis: 80%
+        ul.footer-list
+            flex-basis: 50%
+            padding: .7rem 0
+            text-align: center
+            li.footer-header
+                margin: auto
+                text-align: center
+                font-size: 1.5rem
+                border-bottom: white solid .1rem
+            li
+                font-size: 1.5rem
+                a.footer-link
+                    font-size: 1.2rem
+        ul.contribute
+            display: flex
+            justify-content: center
+            align-items: center
+            li.footer-header
+                margin: 1rem 0
+                    
+            

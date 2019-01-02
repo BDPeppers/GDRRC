@@ -60,7 +60,7 @@
 .down-arrow {
   width: 0;
   height: 0;
-  left: 47%;
+  left: 48%;
   perspective: 2000rem;
   z-index: 1;
   position: absolute;
@@ -259,7 +259,18 @@ div.mobile-logo {
     font-size: 2.5rem;
   }
   div.sect .community {
-    margin-top: -8rem;
+    margin-top: -9rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  div.sect h1.cheader {
+    font-size: 2.5rem;
+  }
+  div.sect .community {
+    margin-top: -12rem;
+  }
+  div.sect a.icon-link i {
+    font-size: 4rem;
   }
 }
 

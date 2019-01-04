@@ -252,6 +252,10 @@ navigation.mobile-nav ul.mobile-dropdown-L2 {
   .mobile-dropdown .mobile-dropdown-L2 li.L2:hover {
     background-color: rgba(66, 162, 170, 0.7);
   }
+
+  div.carousel-caption h1.caption-box {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

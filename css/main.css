@@ -150,7 +150,7 @@ footer div.footer-sect-2 ul.contribute {
   align-items: center;
 }
 footer div.footer-sect-2 ul.contribute li.footer-header {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .siteheader {
@@ -407,6 +407,10 @@ navigation.mobile-nav ul.mobile-dropdown-L2 {
   .mobile-dropdown .mobile-dropdown-L2 li.L2:hover {
     background-color: rgba(66, 162, 170, 0.7);
   }
+
+  div.carousel-caption h1.caption-box {
+    font-size: 2rem;
+  }
 }
 .homepage-sitebanner {
   height: 84vh;
@@ -467,10 +471,15 @@ navigation.mobile-nav ul.mobile-dropdown-L2 {
   height: 8vh;
 }
 
+div.arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .down-arrow {
   width: 0;
   height: 0;
-  left: 48%;
   perspective: 2000rem;
   z-index: 1;
   position: absolute;

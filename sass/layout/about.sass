@@ -2,12 +2,100 @@
 @import "../abstracts/mfe"
 
 //Base - Page Template Styles
-    
+div.about-banner
+    div.jumbotron
+        margin-bottom: 1rem
+        div.about-header
+            @include sect
+            @include display(column)
+            justify-content: center
+            align-items: center
+            width: 100%
+            h1.display-4
+                font-size: 5rem
+            p.lead
+                font-size: 2.5rem
+                text-align: center
+                width: 75%
+//SECTION ONE///////////////////
+div.about-sect1
+    @include sect
+    @include display(row)
+    padding: 5rem 0
+    justify-content: space-between
 
+    div.about-bio
+        flex-basis: 40%
+        @include display(column)
+        justify-content: center
+        h1
+            font-size: 3.5rem
+        p
+            font-size: 2rem
+            letter-spacing: 120%
+    div.sidebar
+        flex-basis: 50%
+        @include display(row)
+        justify-content: center
+        flex-wrap: wrap
+        img
+            flex-basis: 100%
 
 //Main About Page Template
 
 
+//SECTION TWO///////////////////
+div.about-sect2
+    padding: 5rem 0
+    @include sect
+    @include display(row)
+    flex-wrap: wrap
+    justify-content: space-around
+    div.about-card
+        padding: 1rem
+    div.card
+        width: 40rem
+        min-height: 48vh
+        @include display(column)
+        box-shadow: 4px 2px 1px 0px darkgrey
+        div.card-header
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            min-height: 8vh
+            height: auto
+            font-size: 2.5rem
+        div.img-wrap
+            min-height: 20vh
+            @include display(column)
+            justify-content: center
+        div.card-body
+            @include display(column)
+            justify-content: space-around
+            align-items: center
+            p.card-text
+                font-size: 1.7rem
+                margin: auto
+            a.btn
+                width: 50%
+
+
+// Call to Action
+div.cta
+    @include sect
+    @include display(column)
+    align-items: center
+    justify-content: center
+//SECTION THREE//////////////////
+div.section-wrapper3
+    
+div.about-sect3
+  @include sect
+  @include display(row)
+  flex-wrap: wrap  
+  justify-content: space-around
+  padding: 2rem
 
 
 //About Page Template    

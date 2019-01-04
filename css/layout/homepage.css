@@ -100,6 +100,7 @@ div.arrow-wrapper {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 .sect1 i {
   color: #42a2aa;
@@ -225,6 +226,10 @@ div.arrow-wrapper {
   width: 75%;
   margin: auto;
   text-align: center;
+}
+.sect3 p.description a {
+  font-weight: 700;
+  color: black;
 }
 
 div.mobile-logo {

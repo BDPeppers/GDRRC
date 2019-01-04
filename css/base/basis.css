@@ -43,4 +43,20 @@ input {
   outline: none;
 }
 
+.sect-wrapper1 {
+  background: linear-gradient(0deg, white 15%, rgba(66, 162, 170, 0.25) 97%);
+}
+
+.sect-wrapper3 {
+  background: linear-gradient(0deg, rgba(66, 162, 170, 0.25) 0%, white 97%);
+}
+
+a.btn {
+  background-color: #42a2aa;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  border-color: #42a2aa;
+}
+
 /*# sourceMappingURL=basis.css.map */

@@ -60,6 +60,22 @@ input {
   outline: none;
 }
 
+.sect-wrapper1 {
+  background: linear-gradient(0deg, white 15%, rgba(66, 162, 170, 0.25) 97%);
+}
+
+.sect-wrapper3 {
+  background: linear-gradient(0deg, rgba(66, 162, 170, 0.25) 0%, white 97%);
+}
+
+a.btn {
+  background-color: #42a2aa;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  border-color: #42a2aa;
+}
+
 footer {
   min-height: 15vh;
   height: auto;
@@ -514,6 +530,7 @@ div.arrow-wrapper {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 .sect1 i {
   color: #42a2aa;
@@ -640,6 +657,10 @@ div.arrow-wrapper {
   margin: auto;
   text-align: center;
 }
+.sect3 p.description a {
+  font-weight: 700;
+  color: black;
+}
 
 div.mobile-logo {
   display: none;
@@ -691,6 +712,130 @@ div.mobile-logo {
   div.sect a.icon-link i {
     font-size: 4rem;
   }
+}
+div.about-banner div.jumbotron {
+  margin-bottom: 1rem;
+}
+div.about-banner div.jumbotron div.about-header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+div.about-banner div.jumbotron div.about-header h1.display-4 {
+  font-size: 5rem;
+}
+div.about-banner div.jumbotron div.about-header p.lead {
+  font-size: 2.5rem;
+  text-align: center;
+  width: 75%;
+}
+
+div.about-sect1 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: row;
+  padding: 5rem 0;
+  justify-content: space-between;
+}
+div.about-sect1 div.about-bio {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.about-sect1 div.about-bio h1 {
+  font-size: 3.5rem;
+}
+div.about-sect1 div.about-bio p {
+  font-size: 2rem;
+  letter-spacing: 120%;
+}
+div.about-sect1 div.sidebar {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+div.about-sect1 div.sidebar img {
+  flex-basis: 100%;
+}
+
+div.about-sect2 {
+  padding: 5rem 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+div.about-sect2 div.about-card {
+  padding: 1rem;
+}
+div.about-sect2 div.card {
+  width: 40rem;
+  min-height: 48vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 2px 1px 0px darkgrey;
+}
+div.about-sect2 div.card div.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 8vh;
+  height: auto;
+  font-size: 2.5rem;
+}
+div.about-sect2 div.card div.img-wrap {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.about-sect2 div.card div.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+div.about-sect2 div.card div.card-body p.card-text {
+  font-size: 1.7rem;
+  margin: auto;
+}
+div.about-sect2 div.card div.card-body a.btn {
+  width: 50%;
+}
+
+div.cta {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.about-sect3 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

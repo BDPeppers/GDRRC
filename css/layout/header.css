@@ -154,6 +154,19 @@ navigation.mobile-nav ul.mobile-dropdown-L2 {
     display: flex;
     flex-direction: row;
     width: 100%;
+    flex-wrap: wrap;
+  }
+  navigation.mobile-nav div.mobile-header {
+    display: flex;
+    flex-basis: 100%;
+    min-height: 6vh;
+    justify-content: center;
+    align-items: center;
+  }
+  navigation.mobile-nav div.mobile-header h1 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
   }
   navigation.mobile-nav ul.mobile-nav-list {
     display: flex;

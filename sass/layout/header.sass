@@ -142,6 +142,17 @@ navigation.mobile-nav
     navigation.mobile-nav
         @include display(row)
         width: 100%
+        flex-wrap: wrap
+        div.mobile-header
+            display: flex
+            flex-basis: 100%
+            min-height: 6vh
+            justify-content: center
+            align-items: center
+            h1
+                color: $white
+                text-align: center
+                font-size: 2rem
         ul.mobile-nav-list
             @include display(column)
             width: 100%

@@ -9,68 +9,80 @@ footer
         @include display(column)
     div.footer-wrapper
         @include sect
-        @include display(row)
-        padding: 3rem 0
-    h1.footer-sect-header
-        text-align: center
-        color: $white
-        width: 80%
-        border-bottom: white solid .1rem
-        margin: auto
-    div.footer-sect-1
-        flex-basis: 50%
         @include display(column)
-        h1.gdrrc
-            text-align: center
-            color: $white
-        ul.copyright
-            margin: auto
-            text-align: center
-            width: 80%
-            padding: 1.5rem 0
-            li
-                padding: .5rem 0
-                font-size: 1.5rem
-        i.fas, i.fab
-            font-size: 3rem
-            padding: 1rem
-        div.footer-follow
-            flex-basis: 20%
-            ul.footer-follow-list
-                @include display(row)
-                justify-content: center
-    
-    div.footer-sect-2
+div.foot
+    @include display(row)
+    justify-content: space-around
+    padding: 2rem 0
+div.foot-sect1
+    @include display(row)
+
+    ul.foot-list
+        li.foot-sect-header
+            font-size: 1.7rem
+            text-decoration: underline
+        li
+            font-size: 1.3rem
+            line-height: 2.5rem
+div.contribute-follow
+    @include display(column)
+    ul.contribute
         flex-basis: 50%
-        div.footer-explore
-            @include display(row)
-            flex-wrap: wrap
-            justify-content: center
-        h1.footer-sect-header
-            flex-basis: 80%
-        ul.footer-list
-            flex-basis: 50%
-            padding: .7rem 0
-            text-align: center
-            li.footer-header
-                margin: auto
-                text-align: center
-                font-size: 1.5rem
-                border-bottom: white solid .1rem
-            li
-                font-size: 1.5rem
-                a.footer-link
-                    font-size: 1.2rem
-        ul.contribute
+    ul.follow
+        flex-basis: 50%
+        @include display(row)
+        justify-content: space-between
+        flex-wrap: wrap
+        i
+            font-size: 2rem
+div.foot-sect2
+    @include display(column)
+    align-items: center
+    justify-content: center
+    h1
+        color: $white
+        font-size: 1.7rem
+        text-align: center
+    p
+        color: $white
+        padding: 0 1.5rem
+        font-size: 1.3rem
+        text-align: center
+
+//Copyright
+div.copyright-sect
+    @include display(row)
+    flex-wrap: wrap
+    background-color: darken($blue, 10%)
+    ul.copyright
+        @include display(row)
+        @include sect
+        flex-wrap: wrap
+        li
+            font-size: 1.3rem
+            margin: auto
             display: flex
-            justify-content: center
-            align-items: center
-            li.footer-header
-                margin: 1rem 0
+            justify-content: space-around
+            padding: 0 1rem
+
+  
 
 @media screen and (max-width: 1024px)
     
 @media screen and (max-width: 800px)
+    div.foot-sect1
+        flex-wrap: wrap
+        .foot1
+            width: 40%
+            justify-content: flex-start
+            padding: 1rem 0
+            // li
+            //     width: 50%
+    
+        ul.follow
+            margin-top: 2.5rem
+            justify-content: space-between
+            width: 75%
 @media screen and (max-width: 425px)
     
 

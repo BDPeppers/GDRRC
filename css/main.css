@@ -348,6 +348,7 @@ navigation.mobile-nav ul.mobile-dropdown-L2 {
     display: flex;
     flex-basis: 100%;
     min-height: 6vh;
+    padding: 0.5rem 1rem;
     justify-content: center;
     align-items: center;
   }
@@ -729,7 +730,7 @@ div.mobile-logo {
     font-size: 2.5rem;
   }
   div.sect .community {
-    margin-top: -9rem;
+    margin-top: -7rem;
   }
 }
 @media screen and (max-width: 375px) {

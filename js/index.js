@@ -34,3 +34,4 @@ $('#menu-toggle-btn').click(function(){
     
 });
 
+//Opportunity Table

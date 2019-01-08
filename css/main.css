@@ -1334,4 +1334,55 @@ div.calendar i.fa-calendar {
   font-size: 20rem;
 }
 
+div.sect1 {
+  padding: 6rem 0;
+}
+div.sect1 div.mail-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+}
+div.sect1 h1.mail-header {
+  font-size: 4rem;
+  font-weight: 200;
+}
+div.sect1 p.mail-text {
+  font-size: 1.7rem;
+}
+
+form.mail-list {
+  padding: 5rem 1rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+}
+form.mail-list div.form-group label.email {
+  font-size: 2.5rem;
+}
+form.mail-list div.form-group small {
+  font-size: 1rem;
+}
+
+div.interests {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+}
+div.interests small {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+div.interests div.checkboxes {
+  display: flex;
+  flex-direction: row;
+}
+div.interests label.form-check-label {
+  display: flex;
+  flex-direction: row;
+}
+
 /*# sourceMappingURL=main.css.map */

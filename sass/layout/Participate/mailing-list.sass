@@ -1,0 +1,37 @@
+@import "../../abstracts/variables"
+@import "../../abstracts/mfe"
+
+div.sect1
+    padding: 6rem 0
+    
+    div.mail-box
+        @include display(column)
+        padding: 0 1rem
+        @include sect
+    h1.mail-header
+        font-size: 4rem
+        font-weight: 200
+    p.mail-text
+        font-size: 1.7rem
+
+form.mail-list
+    padding: 5rem 1rem
+    @include sect
+    div.form-group
+        label.email
+            font-size: 2.5rem
+        small
+            font-size: 1rem
+div.interests
+    @include display(column)
+    align-items: flex-start
+    padding: 1.5rem 0
+    small
+        font-size: 1rem
+        padding: .5rem 0
+    div.checkboxes
+        @include display(row)
+        
+        
+    label.form-check-label
+        @include display(row)

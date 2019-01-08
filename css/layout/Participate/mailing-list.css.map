@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"mailing-list.css"}
+{"version":3,"sourceRoot":"","sources":["../../../sass/layout/participate/mailing-list.sass","../../../sass/abstracts/mfe.sass"],"names":[],"mappings":"AAGA;EACI;;AAEA;ECLA;EACA,gBDKqB;EACjB;ECJJ;EACA;EACA;;ADIA;EACI;EACA;;AACJ;EACI;;;AAER;EACI;ECbA;EACA;EACA;;ADcI;EACI;;AACJ;EACI;;;AACZ;ECvBI;EACA,gBDuBiB;EACjB;EACA;;AACA;EACI;EACA;;AACJ;EC9BA;EACA,gBD8BqB;;AAGrB;EClCA;EACA,gBDkCqB","file":"mailing-list.css"}

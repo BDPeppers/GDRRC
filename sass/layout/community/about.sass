@@ -1,0 +1,221 @@
+@import "../../abstracts/variables"
+@import "../../abstracts/mfe"
+
+//Base - Page Template Styles
+//Banner for Style for community pages
+div.about-banner
+    div.jumbotron
+        margin-bottom: 1rem
+        div.about-header
+            @include sect
+            @include display(column)
+            justify-content: center
+            align-items: center
+            width: 100%
+            h1.display-4
+                font-size: 5rem
+                text-align: center
+            p.lead
+                font-size: 2.5rem
+                text-align: center
+                width: 75%
+//SECTION ONE///////////////////
+div.about-sect1
+    @include sect
+    @include display(row)
+    padding: 5rem 0
+    justify-content: space-between
+
+    div.about-bio
+        flex-basis: 40%
+        @include display(column)
+        justify-content: center
+        h1
+            font-size: 3.5rem
+            font-weight: 200
+        p
+            font-size: 2rem
+            letter-spacing: 120%
+    div.sidebar
+        flex-basis: 50%
+        @include display(row)
+        justify-content: center
+        flex-wrap: wrap
+        img
+            flex-basis: 100%
+
+//Main About Page Template
+
+
+//SECTION TWO///////////////////
+div.about-sect2
+    padding: 5rem 0
+    @include sect
+    @include display(row)
+    flex-wrap: wrap
+    justify-content: space-around
+    div.about-card
+        padding: 1rem
+    div.card
+        width: 40rem
+        min-height: 48vh
+        @include display(column)
+        box-shadow: 4px 2px 1px 0px darkgrey
+        div.card-header
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            min-height: 8vh
+            height: auto
+            font-size: 2.5rem
+        div.img-wrap
+            min-height: 20vh
+            @include display(column)
+            justify-content: center
+        div.card-body
+            @include display(column)
+            justify-content: space-around
+            align-items: center
+            p.card-text
+                font-size: 1.7rem
+                margin: auto
+                padding: 2.5rem 0
+            a.btn
+                width: 50%
+
+
+// Call to Action
+div.cta
+    @include sect
+    @include display(column)
+    align-items: center
+    justify-content: center
+    h1.display-4
+        font-size: 3.5rem
+    p.lead
+        font-size: 1.7rem
+        text-align: center
+        width: 80%
+//SECTION THREE//////////////////
+div.section-wrapper3
+    
+div.about-sect3
+    @include sect
+    @include display(row)
+    flex-wrap: wrap  
+    justify-content: space-around
+    padding: 5rem 0
+    div.card
+        box-shadow: 4px 2px 1px 0px darkgrey
+    div.card-body
+        @include display(column)
+        justify-content: space-between
+    div.text-center
+        flex-basis: 22%
+        min-height: 15vh
+        @include display(column)
+        justify-content: space-between
+        padding: 2rem
+        div.card-body
+            h5.card-title
+                font-size: 2.5rem
+            p.card-text
+                font-size: 1.7rem
+            a.btn
+                font-size: 2rem
+                margin: auto
+
+//SECTION FOUR ///////////////
+div.sect-wrapper4
+
+div.about-sect4
+    padding: 5rem 0
+    @include sect
+    div.contact-us
+        h1
+            font-size: 3rem
+            padding: 0 1rem
+            font-weight: 300
+        p
+            font-size: 2rem
+            padding: 0 1rem
+    form
+        padding: 0 1rem
+        div.form-group
+            width: 80%
+            label
+                font-size: 1.5rem
+//About Page Template 
+
+
+
+
+
+//Base Styles Mobile
+@media screen and (max-width: 1024px)
+
+@media screen and (max-width: 800px) 
+    div.about-sect1
+        padding: 2rem 1rem
+        div.about-bio
+            h1
+                font-size: 2.5rem
+            p
+                font-size: 1.7rem
+        div.sidebar
+            img
+                width: 75%
+                height: 75%
+
+    
+
+@media screen and (max-width: 425px)
+    div.about-sect1
+        @include display(column)
+        div.about-bio
+            h1
+                text-align: center
+            p
+                text-align: center
+        div.sidebar
+            img
+                width: 50%
+                height: 50%
+
+    
+
+@media screen and (max-width: 375px)   
+
+
+//Main Aout Page Mobile 
+@media screen and (max-width: 1024px)
+    
+@media screen and (max-width: 800px) 
+
+    div.sect2
+        div.about-sect2
+            div.about-card
+                div.card
+                    width: 80vw
+    // Section Three                
+    div.sect3
+        div.about-sect3
+            div.card
+                padding: 1rem 0
+                flex-basis: 45%
+            div.text-center
+                flex-basis: 48%
+@media screen and (max-width: 425px)
+    
+@media screen and (max-width: 375px)  
+
+
+//About Page Template
+@media screen and (max-width: 1024px)  
+
+@media screen and (max-width: 800px) 
+
+@media screen and (max-width: 425px)
+    
+@media screen and (max-width: 375px)

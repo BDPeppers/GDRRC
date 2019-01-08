@@ -14,19 +14,22 @@ $('#menu-toggle-btn').click(function(){
     // };
 
     //dropdown
-    $('.mobile-dropdown').toggle(100);
+    $('.mobile-dropdown').toggle(200);
     //level two
     $('#DD-L2-Community').click(function(){
-        $('#Community').toggle(100);
+        $('#Community').toggle(200);
         // closeIt('#Community', '#ADR', '#ER');
     });
     $('#DD-L2-ADR').click(function(){
-        $('#ADR').toggle(100);
+        $('#ADR').toggle(200);
         // closeIt('#ADR','#Community','#ER');
     });
     $('#DD-L2-ER').click(function(){
-        $('#ER').toggle(100);
+        $('#ER').toggle(200);
         // closeIt('#ER','#ADR','#Community');
+    });
+    $('#DD-L2-Participate').click(function(){
+        $('#participate').toggle(200);
     });
     
 });

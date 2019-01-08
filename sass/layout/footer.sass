@@ -21,6 +21,7 @@ div.foot-sect1
         li.foot-sect-header
             font-size: 1.7rem
             text-decoration: underline
+            padding-bottom: .7rem
         li
             font-size: 1.3rem
             line-height: 2.5rem
@@ -28,6 +29,7 @@ div.contribute-follow
     @include display(column)
     ul.contribute
         flex-basis: 50%
+        margin-bottom: 6rem
     ul.follow
         flex-basis: 50%
         @include display(row)
@@ -50,6 +52,7 @@ div.foot-sect2
         text-align: center
 
 //Copyright
+
 div.copyright-sect
     @include display(row)
     flex-wrap: wrap
@@ -58,6 +61,7 @@ div.copyright-sect
         @include display(row)
         @include sect
         flex-wrap: wrap
+        align-items: center
         li
             font-size: 1.3rem
             margin: auto
@@ -80,9 +84,8 @@ div.copyright-sect
             //     width: 50%
     
         ul.follow
-            margin-top: 2.5rem
             justify-content: space-between
-            width: 75%
+            width: 60%
 @media screen and (max-width: 425px)
     
 

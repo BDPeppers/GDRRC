@@ -29,6 +29,7 @@ div.foot-sect1 {
 div.foot-sect1 ul.foot-list li.foot-sect-header {
   font-size: 1.7rem;
   text-decoration: underline;
+  padding-bottom: 0.7rem;
 }
 div.foot-sect1 ul.foot-list li {
   font-size: 1.3rem;
@@ -41,6 +42,7 @@ div.contribute-follow {
 }
 div.contribute-follow ul.contribute {
   flex-basis: 50%;
+  margin-bottom: 6rem;
 }
 div.contribute-follow ul.follow {
   flex-basis: 50%;
@@ -84,6 +86,7 @@ div.copyright-sect ul.copyright {
   width: 100%;
   max-width: 130rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 div.copyright-sect ul.copyright li {
   font-size: 1.3rem;
@@ -103,9 +106,8 @@ div.copyright-sect ul.copyright li {
     padding: 1rem 0;
   }
   div.foot-sect1 ul.follow {
-    margin-top: 2.5rem;
     justify-content: space-between;
-    width: 75%;
+    width: 60%;
   }
 }
 

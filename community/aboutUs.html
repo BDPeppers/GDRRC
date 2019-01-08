@@ -20,51 +20,126 @@
 <body>
     <!--########## LOGO + NAVIGATION BAR + SEARCH BAR ##########-->
     <header class="siteheader">
-        <div class="header-wrapper">
-            <!--########## LOGO ##########-->
-            <div class="logo">
-                <a href="../index.html"><img src="/img/GDRRC.png"></a>
-            </div>
-
-            <div class="snbar-wrapper">
-                <!--########## NAVIGATION BAR ##########-->
-                <navigation class="navigation desktop-nav">
-                    <ul class="desktop-nav-list">
-                        <li class="d-nav-link">
-                            <a href="#" class="nav-btn">Community</a>
-                            <ul class="dropdown">
-                                <li class="dropdown-link"><a href="aboutUs.html">About Us</a></li>
-                                <!-- About Us + Contact Form at the bottom -->
-                                <li class="dropdown-link"><a href="network.html">Network</a></li>
-                                <!-- Social Medai + Blog -->
-                                <li class="dropdown-link"><a href="opportunities.html">Opportunities</a></li>
-                                <!-- Opportunities -->
-                                <li class="dropdown-link"><a href="events.html">Events</a></li>
-                                <!-- Events -->
+            <div class="header-wrapper">
+                <!--########## LOGO ##########-->
+                <div class="logo">
+                    <a href="#"><img src="../img/GDRRC.png"></a>
+                </div>
+    
+                <div class="snbar-wrapper">
+                    <!--########## NAVIGATION BAR ##########-->
+                    <navigation class="navigation desktop-nav">
+                        <ul class="desktop-nav-list">
+                            <li class="d-nav-link">
+                                <a href="#" class="nav-btn">Community</a>
+                                <ul class="dropdown">
+                                    <!-- About Us + Contact Form at the bottom -->
+                                    <li class="dropdown-link"><a href="aboutUs.html">About Us</a></li>
+                                    <!-- ADR Organizations -->
+                                    <li class="dropdown-link"><a href="organizations.html">Organizations</a></li>
+                                    <!-- Social Medai + Blog -->
+                                    <li class="dropdown-link"><a href="network.html">Network</a></li>
+                                    <!-- Opportunities -->
+                                    <li class="dropdown-link"><a href="opportunities.html">Opportunities</a></li>
+                                    <!-- Events -->
+                                    <li class="dropdown-link"><a href="events.html">Events</a></li>
+    
+                                </ul>
+                            </li>
+                            <li class="d-nav-link">
+                                <a href="#" class="nav-btn">ADR Project</a>
+                                <ul class="dropdown">
+                                    <li class="dropdown-link"><a href="../ADR/about.html">About</a></li>
+                                    <li class="dropdown-link"><a href="../ADR/maps.html">Maps</a></li>
+                                    <li class="dropdown-link"><a href="../ADR/country-list.html">Country List</a></li>
+                                </ul>
+                            </li>
+                            <li class="d-nav-link">
+                                <a href="#" class="nav-btn">Educational Resources</a>
+                                <ul class="dropdown">
+                                    <li class="dropdown-link"><a href="Educational-Resources/degree-programs.html">Degree
+                                            Programs</a></li>
+                                    <li class="dropdown-link"><a href="../Educational-Resources/glossary.html">Glossary</a></li>
+                                    <li class="dropdown-link"><a href="../Educational-Resources/FAQ.html">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li class="d-nav-link">
+                                <a href="#" class="nav-btn">Participate</a>
+                                <ul class="dropdown">
+                                    <li class="dropdown-link"><a href="../participate/mailing-list.html">Mailing List Sign Up</a></li>
+                                    <li class="dropdown-link"><a href="../participate/info-submission.html">Info Submission Form</a></li>
+                                </ul>
+                            </li>
+    
+    
+                            <!-- Search Bar -->
+                            <li class="d-nav-link">
+                                <div class="search-bar">
+                                    <input class="search-input" type="text" placeholder="Search...">
+                                    <a href="#" class="search-btn">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </navigation>
+                </div>
+    
+                <!-- ##### MOBILE NAVIGATION ###### -->
+                <navigation class="mobile-nav">
+                    <div class="mobile-header">
+                        <h1><a href="../index.html">Global Dispute Resolution Resource Center</a></h1>
+                    </div>
+                    <ul class="mobile-nav-list">
+                        <li class="m-nav-link">
+                            <a href="#" id="menu-toggle-btn" class="menu-btn">
+                                <i id="menu-toggle" class="fas fa-bars"></i>
+                                Menu
+                            </a>
+                            <ul class="mobile-dropdown">
+                                <li class="L1">
+                                    <a class="L1-link" id="DD-L2-Community">Community</a>
+                                    <ul class="mobile-dropdown-L2" id="Community">
+                                        <li class="L2"><a class="L2-link" href="aboutUs.html">About Us</a></li>
+                                        <li class="L2"><a class="L2-link" href="network.html">Network</a></li>
+                                        <li class="L2"><a class="L2-link" href="organizations.html">Organizations</a></li>
+                                        <li class="L2"><a class="L2-link" href="opportunities.html">Opportunities</a></li>
+                                        <li class="L2"><a class="L2-link" href="events.html">Events</a></li>
+    
+                                    </ul>
+                                </li>
+    
+                                <li class="L1" id="DD-L2">
+                                    <a class="L1-link" id="DD-L2-ADR">ADR Project</a>
+                                    <ul class="mobile-dropdown-L2" id="ADR">
+                                        <li class="L2"><a class="L2-link" href="ADR/about.html">About</a></li>
+                                        <li class="L2"><a class="L2-link" href="ADR/maps.html">Maps</a></li>
+                                        <li class="L2"><a class="L2-link" href="ADR/country-list.html">Country List</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li class="L1" id="DD-L2">
+                                    <a class="L1-link" id="DD-L2-ER">Educational Resources</a>
+                                    <ul class="mobile-dropdown-L2" id="ER">
+                                        <li class="L2"><a class="L2-link" href="Educational-Resources/degree-programs.html">Degree
+                                                Programs</a></li>
+                                        <li class="L2"><a class="L2-link" href="Educational-Resources/glossary.html">Glossary</a></li>
+                                        <li class="L2"><a class="L2-link" href="Educational-Resources/FAQ.html">FAQ</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li class="L1" id="DD-L2">
+                                    <a class="L1-link" id="DD-L2-Participate">Participate</a>
+                                    <ul class="mobile-dropdown-L2" id="participate">
+                                        <li class="L2"><a class="L2-link" href="participate/mailing-list.html">Mailing List
+                                                Sign Up</a></li>
+                                        <li class="L2"><a class="L2-link" href="participate/info-submission.html">Info
+                                                Submission Form</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
-                        <li class="d-nav-link">
-                            <a href="#" class="nav-btn">ADR Project</a>
-                            <ul class="dropdown">
-                                <li class="dropdown-link"><a href="../ADR/about.html">About</a></li>
-                                <li class="dropdown-link"><a href="../ADR/maps.html">Maps</a></li>
-                                <li class="dropdown-link"><a href="../ADR/country-list.html">Country List</a></li>
-                                <li class="dropdown-link"><a href="../ADR/organizations.html">Organizations</a></li>
-                                <li class="dropdown-link"><a href="../ADR/submission-form.html">Submission Form</a></li>
-
-                            </ul>
-                        </li>
-                        <li class="d-nav-link">
-                            <a href="#" class="nav-btn">Educational Resources</a>
-                            <ul class="dropdown">
-                                <li class="dropdown-link"><a href="../Educational-Resources/degree-programs.html">Degree
-                                        Programs</a></li>
-                                <li class="dropdown-link"><a href="../Educational-Resources/glossary.html">Glossary</a></li>
-                                <li class="dropdown-link"><a href="../Educational-Resources/FAQ.html">FAQ</a></li>
-                            </ul>
-                        </li>
-                        <li class="d-nav-link"><a href="../" class="nav-btn">Contribute</a></li>
-                        <li class="d-nav-link">
+                        <li class="m-nav-link">
                             <div class="search-bar">
                                 <input class="search-input" type="text" placeholder="Search...">
                                 <a href="#" class="search-btn">
@@ -75,67 +150,8 @@
                     </ul>
                 </navigation>
             </div>
+        </header>
 
-            <!-- ##### MOBILE NAVIGATION ###### -->
-            <navigation class="mobile-nav">
-
-                <ul class="mobile-nav-list">
-                    <li class="m-nav-link">
-                        <a href="#" id="menu-toggle-btn" class="menu-btn">
-                            <i id="menu-toggle" class="fas fa-bars"></i>
-                            Menu
-                        </a>
-                        <ul class="mobile-dropdown">
-                            <li class="L1">
-                                <a class="L1-link" id="DD-L2-Community">Community</a>
-                                <ul class="mobile-dropdown-L2" id="Community">
-                                    <li class="L2"><a class="L2-link" href="network.html">Network</a></li>
-                                    <li class="L2"><a class="L2-link" href="opportunities.html">Opportunities</a></li>
-                                    <li class="L2"><a class="L2-link" href="events.html">Events</a></li>
-                                    <li class="L2"><a class="L2-link" href="aboutUs.html">About Us</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="L1" id="DD-L2">
-                                <a class="L1-link" id="DD-L2-ADR">ADR Project</a>
-                                <ul class="mobile-dropdown-L2" id="ADR">
-                                    <li class="L2"><a class="L2-link" href="../ADR/about.html">About</a></li>
-                                    <li class="L2"><a class="L2-link" href="../ADR/maps.html">Maps</a></li>
-                                    <li class="L2"><a class="L2-link" href="../ADR/country-list.html">Country List</a></li>
-                                    <li class="L2"><a class="L2-link" href="../ADR/organizations.html">Organizations</a></li>
-                                    <li class="L2"><a class="L2-link" href="../ADR/submission-form.html">Submission
-                                            Form</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="L1" id="DD-L2">
-                                <a class="L1-link" id="DD-L2-ER">Educational Resources</a>
-                                <ul class="mobile-dropdown-L2" id="ER">
-                                    <li class="L2"><a class="L2-link" href="../Educational-Resources/degree-programs.html">Degree
-                                            Programs</a></li>
-                                    <li class="L2"><a class="L2-link" href="../Educational-Resources/glossary.html">Glossary</a></li>
-                                    <li class="L2"><a class="L2-link" href="../Educational-Resources/FAQ.html">FAQ</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="L1">
-                                <a href="../contribute/contribute.html" class="L1-link">Contribute</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="m-nav-link">
-                        <div class="search-bar">
-                            <input class="search-input" type="text" placeholder="Search...">
-                            <a href="#" class="search-btn">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-
-            </navigation>
-        </div>
-    </header>
 
     <!-- About Banner/Title -->
     <div class="about-banner">
@@ -149,7 +165,7 @@
     </div>
 
     <!-- About Section One ~ Bio -->
-    <div class="sect-wrapper1">
+    <div class="top-bottom">
         <div class="about-sect1">
             <div class="about-bio">
                 <h1>What is GDRRC</h1>
@@ -168,8 +184,8 @@
         </div>
     </div>
 
-    <!-- About Section Two -->
-    <div class="sect-wrapper2">
+    <!-- About Section Two ~ Partners-->
+    <div class="sect2">
         <div class="about-sect2">
             <div class="about-card">
                 <div class="card">
@@ -180,9 +196,8 @@
 
                     <div class="card-body">
                         <p class="card-text">Ut non lobortis metus. Integer lobortis et sem sit amet luctus. Cras
-                            rhoncus
-                            fringilla mauris ut sagittis. Ut facilisis nibh ac erat vulputate molestie. Sed massa nisi,
-                            vestibulum ut tortor eget, condimentum porttitor leo.</p>
+                            rhoncus fringilla mauris ut sagittis. Ut facilisis nibh ac erat vulputate molestie. Sed
+                            massa nisi, vestibulum ut tortor eget, condimentum porttitor leo.</p>
                         <a href="http://atlciam.org/" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
@@ -229,44 +244,144 @@
                 vestibulum ut tortor eget, condimentum porttitor leo.</p>
         </div>
     </div>
-    <!-- Section Three -->
-    <div class="sect-wrapper3 sect3">
+
+    <!-- Section Three ~ Activities -->
+    <div class="bottom-top sect3">
         <div class="about-sect3">
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card text-center">
                 <div class="card-body">
                     <h5 class="card-title">Networking</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">Etiam laoreet nibh neque, quis rutrum purus feugiat vel. Morbi sagittis massa
+                        auctor, rhoncus turpis vitae, euismod sapien. Vestibulum condimentum ipsum nec consequat
+                        vehicula. Sed venenatis posuere orci vitae viverra.</p>
+                    <a href="network.html" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card text-center">
                 <div class="card-body">
                     <h5 class="card-title">ADR Project</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">Etiam laoreet nibh neque, quis rutrum purus feugiat vel. Morbi sagittis massa
+                        auctor, rhoncus turpis vitae, euismod sapien. Vestibulum condimentum ipsum nec consequat
+                        vehicula. Sed venenatis posuere orci vitae viverra.</p>
+                    <a href="../ADR/about.html" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card text-center">
                 <div class="card-body">
                     <h5 class="card-title">Educational</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">Etiam laoreet nibh neque, quis rutrum purus feugiat vel. Morbi sagittis massa
+                        auctor, rhoncus turpis vitae, euismod sapien. Vestibulum condimentum ipsum nec consequat
+                        vehicula. Sed venenatis posuere orci vitae viverra.</p>
+                    <a href="../Educational-Resources/degree-programs.html" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card text-center">
                 <div class="card-body">
-                    <h5 class="card-title">Submission Forms</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Info Submission Forms</h5>
+                    <p class="card-text">Etiam laoreet nibh neque, quis rutrum purus feugiat vel. Morbi sagittis massa
+                        auctor, rhoncus turpis vitae, euismod sapien. Vestibulum condimentum ipsum nec consequat
+                        vehicula. Sed venenatis posuere orci vitae viverra.</p>
+                    <a href="../participate/info-submission.html" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div>
-        
+    <!-- Section Four ~ Contact Us -->
+    <div class="top-bottom sect4">
+        <div class="about-sect4">
+            <div class="contact-us">
+                <h1>
+                    Contact Us
+                </h1>
+                <p>
+                    Duis lobortis ante mi, sed tristique ipsum pellentesque nec. In quis metus quis enim consectetur
+                    elementum ut eget purus. Suspendisse nec laoreet ligula.
+                </p>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="youremail@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Subject</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Interests</option>
+                        <option>Suggestions</option>
+                        <option>Concerns/Questions</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comments</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
-    <!-- Optional JavaScript -->
+
+   <!-- ###### FOOTER ###### -->
+   <footer>
+        <div class="footer-wrapper">
+            <div class="foot-sect1 foot">
+                <ul class="foot-list community foot1">
+                    <li class="foot-sect-header">Community</li>
+                    <li><a href="aboutUs.html"></a>About Us</li>
+                    <li><a href="network.html"></a>Network</li>
+                    <li><a href="organizations.html"></a>Organizations</li>
+                    <li><a href="opportunities.html"></a>Opportunities</li>
+                    <li><a href="events.html"></a>Events</li>
+
+                </ul>
+                <ul class="foot-list ADR foot1">
+                    <li class="foot-sect-header">ADR Project</li>
+                    <li><a href="../ADR/about.html"></a>About</li>
+                    <li><a href="../ADR/maps.html"></a>Maps</li>
+                    <li><a href="../ADR/country-list.html"></a>Country List</li>
+                </ul>
+                <ul class="foot-list educational foot1">
+                    <li class="foot-sect-header">Educational Resources</li>
+                    <li><a href="../Educational-Resources/degree-programs.html">Degree Programs</a></li>
+                    <li><a href="../Educational-Resources/glossary.html">Glossary</a></li>
+                    <li><a href="../Educational-Resources/FAQ.html">FAQ</a></li>
+                </ul>
+                <div class="contribute-follow foot1">
+                    <ul class="foot-list contribute">
+                        <li class="foot-sect-header">Participate</li>
+                        <li><a href="../participate/info-submission.html">Info Submission Form</a></li>
+                        <li><a href="../participate/mailing-list.html">Mailing List Sign Up</a></li>
+                    </ul>
+                    <ul class="foot-list follow">
+                        <li><i class="fab fa-linkedin"></i></li>
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fas fa-blog"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-sect2 foot">
+                <h1>Global Dispute Resolution Resource Center</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo orci vel magna mattis, lacinia
+                    porta massa varius. Nunc tempus magna vitae ornare ullamcorper. Morbi velit ligula, pretium et
+                    tempus pellentesque, bibendum sit amet felis. Vivamus tortor magna, dapibus non odio sit amet,
+                    consectetur vulputate dui. Donec ut elit eu diam imperdiet euismod nec et velit. Sed pulvinar ipsum
+                    mi. Maecenas ut augue eu diam posuere bibendum. Nam laoreet sagittis lectus, at semper massa
+                    fringilla sit amet. </p>
+            </div>
+        </div>
+        <div class="copyright-sect foot">
+            <ul class="copyright">
+                <li>@2019 Georgia State University</li>
+                <li>GSU College of Law</li>
+                <li>Consortium on Negotiation and Conflict Resolution</li>
+            </ul>
+        </div>
+    </footer>
+
     <!-- jQuery first, then Popper.js, Bootstrap JS, then custom JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

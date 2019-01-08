@@ -29,6 +29,10 @@ a:link, a:visited, a:hover, a:active {
   color: white;
 }
 
+h1 {
+  font-weight: 200;
+}
+
 ul {
   display: flex;
   flex-direction: row;
@@ -43,20 +47,29 @@ input {
   outline: none;
 }
 
-.sect-wrapper1 {
+.top-bottom {
   background: linear-gradient(0deg, white 15%, rgba(66, 162, 170, 0.25) 97%);
 }
 
-.sect-wrapper3 {
+.bottom-top {
   background: linear-gradient(0deg, rgba(66, 162, 170, 0.25) 0%, white 97%);
 }
 
-a.btn {
+a.btn, button.btn, a.btn-primary:hover, button.btn-primary:hover {
   background-color: #42a2aa;
   padding: 1rem;
   font-size: 1.5rem;
   border-radius: 2rem;
   border-color: #42a2aa;
+}
+
+div.jumbotron {
+  background-color: #f1f1f2;
+}
+
+div.form-group input.form-control, div.form-group select.form-control {
+  height: calc(2.25rem + .8rem);
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=basis.css.map */

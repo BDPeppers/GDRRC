@@ -46,6 +46,10 @@ a:link, a:visited, a:hover, a:active {
   color: white;
 }
 
+h1 {
+  font-weight: 200;
+}
+
 ul {
   display: flex;
   flex-direction: row;
@@ -60,20 +64,29 @@ input {
   outline: none;
 }
 
-.sect-wrapper1 {
+.top-bottom {
   background: linear-gradient(0deg, white 15%, rgba(66, 162, 170, 0.25) 97%);
 }
 
-.sect-wrapper3 {
+.bottom-top {
   background: linear-gradient(0deg, rgba(66, 162, 170, 0.25) 0%, white 97%);
 }
 
-a.btn {
+a.btn, button.btn, a.btn-primary:hover, button.btn-primary:hover {
   background-color: #42a2aa;
   padding: 1rem;
   font-size: 1.5rem;
   border-radius: 2rem;
   border-color: #42a2aa;
+}
+
+div.jumbotron {
+  background-color: #f1f1f2;
+}
+
+div.form-group input.form-control, div.form-group select.form-control {
+  height: calc(2.25rem + .8rem);
+  font-size: 1.5rem;
 }
 
 footer {
@@ -107,6 +120,7 @@ div.foot-sect1 {
 div.foot-sect1 ul.foot-list li.foot-sect-header {
   font-size: 1.7rem;
   text-decoration: underline;
+  padding-bottom: 0.7rem;
 }
 div.foot-sect1 ul.foot-list li {
   font-size: 1.3rem;
@@ -119,6 +133,7 @@ div.contribute-follow {
 }
 div.contribute-follow ul.contribute {
   flex-basis: 50%;
+  margin-bottom: 6rem;
 }
 div.contribute-follow ul.follow {
   flex-basis: 50%;
@@ -162,6 +177,7 @@ div.copyright-sect ul.copyright {
   width: 100%;
   max-width: 130rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 div.copyright-sect ul.copyright li {
   font-size: 1.3rem;
@@ -181,9 +197,8 @@ div.copyright-sect ul.copyright li {
     padding: 1rem 0;
   }
   div.foot-sect1 ul.follow {
-    margin-top: 2.5rem;
     justify-content: space-between;
-    width: 75%;
+    width: 60%;
   }
 }
 .siteheader {
@@ -730,7 +745,7 @@ div.mobile-logo {
     font-size: 2.5rem;
   }
   div.sect .community {
-    margin-top: -7rem;
+    margin-top: -5rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -759,6 +774,7 @@ div.about-banner div.jumbotron div.about-header {
 }
 div.about-banner div.jumbotron div.about-header h1.display-4 {
   font-size: 5rem;
+  text-align: center;
 }
 div.about-banner div.jumbotron div.about-header p.lead {
   font-size: 2.5rem;
@@ -783,6 +799,7 @@ div.about-sect1 div.about-bio {
 }
 div.about-sect1 div.about-bio h1 {
   font-size: 3.5rem;
+  font-weight: 200;
 }
 div.about-sect1 div.about-bio p {
   font-size: 2rem;
@@ -843,6 +860,7 @@ div.about-sect2 div.card div.card-body {
 div.about-sect2 div.card div.card-body p.card-text {
   font-size: 1.7rem;
   margin: auto;
+  padding: 2.5rem 0;
 }
 div.about-sect2 div.card div.card-body a.btn {
   width: 50%;
@@ -857,6 +875,14 @@ div.cta {
   align-items: center;
   justify-content: center;
 }
+div.cta h1.display-4 {
+  font-size: 3.5rem;
+}
+div.cta p.lead {
+  font-size: 1.7rem;
+  text-align: center;
+  width: 80%;
+}
 
 div.about-sect3 {
   margin: 0 auto;
@@ -866,7 +892,194 @@ div.about-sect3 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 5rem 0;
+}
+div.about-sect3 div.card {
+  box-shadow: 4px 2px 1px 0px darkgrey;
+}
+div.about-sect3 div.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+div.about-sect3 div.text-center {
+  flex-basis: 22%;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 2rem;
+}
+div.about-sect3 div.text-center div.card-body h5.card-title {
+  font-size: 2.5rem;
+}
+div.about-sect3 div.text-center div.card-body p.card-text {
+  font-size: 1.7rem;
+}
+div.about-sect3 div.text-center div.card-body a.btn {
+  font-size: 2rem;
+  margin: auto;
+}
+
+div.about-sect4 {
+  padding: 5rem 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+}
+div.about-sect4 div.contact-us h1 {
+  font-size: 3rem;
+  padding: 0 1rem;
+  font-weight: 300;
+}
+div.about-sect4 div.contact-us p {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+div.about-sect4 form {
+  padding: 0 1rem;
+}
+div.about-sect4 form div.form-group {
+  width: 80%;
+}
+div.about-sect4 form div.form-group label {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  div.about-sect1 {
+    padding: 2rem 1rem;
+  }
+  div.about-sect1 div.about-bio h1 {
+    font-size: 2.5rem;
+  }
+  div.about-sect1 div.about-bio p {
+    font-size: 1.7rem;
+  }
+  div.about-sect1 div.sidebar img {
+    width: 75%;
+    height: 75%;
+  }
+}
+@media screen and (max-width: 425px) {
+  div.about-sect1 {
+    display: flex;
+    flex-direction: column;
+  }
+  div.about-sect1 div.about-bio h1 {
+    text-align: center;
+  }
+  div.about-sect1 div.about-bio p {
+    text-align: center;
+  }
+  div.about-sect1 div.sidebar img {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  div.sect2 div.about-sect2 div.about-card div.card {
+    width: 80vw;
+  }
+
+  div.sect3 div.about-sect3 div.card {
+    padding: 1rem 0;
+    flex-basis: 45%;
+  }
+  div.sect3 div.about-sect3 div.text-center {
+    flex-basis: 48%;
+  }
+}
+div.about-header p.network-lead {
+  padding: 3rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 75%;
+}
+
+div.network {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  padding: 4rem 2rem;
+}
+div.network div.user-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+div.network div.user-row i.fas {
+  font-size: 8rem;
+  color: #42a2aa;
+}
+div.network div.group-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div.network div.group-row i.fas {
+  font-size: 15rem;
+  color: #42a2aa;
+}
+div.network div.text-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div.network div.text-body p {
+  width: 60%;
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+div.social-network {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 0;
+}
+div.social-network h1 {
+  font-size: 6rem;
+  text-align: center;
+}
+div.social-network ul.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem 0;
+}
+div.social-network ul.social i {
+  font-size: 10rem;
+  color: #42a2aa;
+}
+div.social-network p {
+  font-size: 2rem;
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+
+div.blog {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+div.blog i.fa-blog {
+  font-size: 15rem;
+  padding: 1rem 0;
+  color: #42a2aa;
+  text-align: center;
+}
+div.blog p {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

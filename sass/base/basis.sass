@@ -11,6 +11,9 @@ a:link, a:visited, a:hover, a:active
     text-decoration: none
     color: $white
 
+h1
+    font-weight: 200
+
 ul
     display: flex
     flex-direction: row
@@ -21,17 +24,34 @@ ul
 input
     outline: none
 //Custom Styles
-.sect-wrapper1
+.top-bottom
+    //top to bottom
     background: linear-gradient(0deg, rgba($white,1) 15%, rgba($green,.25) 97%)
-.sect-wrapper2
-    // background: linear-gradient(0deg, rgba($green,.25) 0%, rgba($white,1) 97%)
-.sect-wrapper3
-    // background: linear-gradient(0deg, rgba($white,1) 15%, rgba($green,.25) 97%)
+.bottom-top
+    //bottom to top
     background: linear-gradient(0deg, rgba($green,.25) 0%, rgba($white,1) 97%)
-//Bootstrap Overide
-a.btn
+
+//Bootstrap Overide////////////////////
+a.btn, button.btn, a.btn-primary:hover, button.btn-primary:hover
     background-color: $green
     padding: 1rem
     font-size: 1.5rem
     border-radius: 2rem
     border-color: $green
+div.jumbotron
+    background-color: lighten($gray, 57%)
+//Contact Us
+div.form-group
+    input.form-control, select.form-control
+        height: calc(2.25rem + .8rem)
+        font-size: 1.5rem
+
+///Mobile View
+@media screen and (max-width: 1024px)
+    
+
+@media screen and (max-width: 800px) 
+
+@media screen and (max-width: 425px)
+    
+@media screen and (max-width: 375px)

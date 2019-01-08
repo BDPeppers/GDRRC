@@ -35,14 +35,17 @@
                         <li class="d-nav-link">
                             <a href="#" class="nav-btn">Community</a>
                             <ul class="dropdown">
-                                <li class="dropdown-link"><a href="/community/aboutUs.html">About Us</a></li>
                                 <!-- About Us + Contact Form at the bottom -->
-                                <li class="dropdown-link"><a href="/community/network.html">Network</a></li>
+                                <li class="dropdown-link"><a href="community/aboutUs.html">About Us</a></li>
+                                <!-- ADR Organizations -->
+                                <li class="dropdown-link"><a href="community/organizations.html">Organizations</a></li>
                                 <!-- Social Medai + Blog -->
-                                <li class="dropdown-link"><a href="/community/opportunities.html">Opportunities</a></li>
+                                <li class="dropdown-link"><a href="community/network.html">Network</a></li>
                                 <!-- Opportunities -->
-                                <li class="dropdown-link"><a href="/community/events.html">Events</a></li>
+                                <li class="dropdown-link"><a href="community/opportunities.html">Opportunities</a></li>
                                 <!-- Events -->
+                                <li class="dropdown-link"><a href="community/events.html">Events</a></li>
+
                             </ul>
                         </li>
                         <li class="d-nav-link">
@@ -51,9 +54,6 @@
                                 <li class="dropdown-link"><a href="ADR/about.html">About</a></li>
                                 <li class="dropdown-link"><a href="ADR/maps.html">Maps</a></li>
                                 <li class="dropdown-link"><a href="ADR/country-list.html">Country List</a></li>
-                                <li class="dropdown-link"><a href="ADR/organizations.html">Organizations</a></li>
-                                <li class="dropdown-link"><a href="ADR/submission-form.html">Submission Form</a></li>
-
                             </ul>
                         </li>
                         <li class="d-nav-link">
@@ -65,7 +65,16 @@
                                 <li class="dropdown-link"><a href="Educational-Resources/FAQ.html">FAQ</a></li>
                             </ul>
                         </li>
-                        <li class="d-nav-link"><a href="#" class="nav-btn">Contribute</a></li>
+                        <li class="d-nav-link">
+                            <a href="#" class="nav-btn">Participate</a>
+                            <ul class="dropdown">
+                                <li class="dropdown-link"><a href="participate/mailing-list.html">Mailing List Sign Up</a></li>
+                                <li class="dropdown-link"><a href="participate/info-submission.html">Info Submission Form</a></li>
+                            </ul>
+                        </li>
+
+
+                        <!-- Search Bar -->
                         <li class="d-nav-link">
                             <div class="search-bar">
                                 <input class="search-input" type="text" placeholder="Search...">
@@ -80,7 +89,9 @@
 
             <!-- ##### MOBILE NAVIGATION ###### -->
             <navigation class="mobile-nav">
-                <div class="mobile-header"><h1>Global Dispute Resolution Resource Center</h1></div>
+                <div class="mobile-header">
+                    <h1>Global Dispute Resolution Resource Center</h1>
+                </div>
                 <ul class="mobile-nav-list">
                     <li class="m-nav-link">
                         <a href="#" id="menu-toggle-btn" class="menu-btn">
@@ -91,10 +102,12 @@
                             <li class="L1">
                                 <a class="L1-link" id="DD-L2-Community">Community</a>
                                 <ul class="mobile-dropdown-L2" id="Community">
+                                    <li class="L2"><a class="L2-link" href="community/aboutUs.html">About Us</a></li>
                                     <li class="L2"><a class="L2-link" href="community/network.html">Network</a></li>
+                                    <li class="L2"><a class="L2-link" href="community/organizations.html">Organizations</a></li>
                                     <li class="L2"><a class="L2-link" href="community/opportunities.html">Opportunities</a></li>
                                     <li class="L2"><a class="L2-link" href="community/events.html">Events</a></li>
-                                    <li class="L2"><a class="L2-link" href="community/aboutUs.html">About Us</a></li>
+
                                 </ul>
                             </li>
 
@@ -104,8 +117,6 @@
                                     <li class="L2"><a class="L2-link" href="ADR/about.html">About</a></li>
                                     <li class="L2"><a class="L2-link" href="ADR/maps.html">Maps</a></li>
                                     <li class="L2"><a class="L2-link" href="ADR/country-list.html">Country List</a></li>
-                                    <li class="L2"><a class="L2-link" href="ADR/organizations.html">Organizations</a></li>
-                                    <li class="L2"><a class="L2-link" href="ADR/submission-form.html">Submission Form</a></li>
                                 </ul>
                             </li>
 
@@ -119,8 +130,14 @@
                                 </ul>
                             </li>
 
-                            <li class="L1">
-                                <a href="contribute/contribute.html" class="L1-link">Contribute</a>
+                            <li class="L1" id="DD-L2">
+                                <a class="L1-link" id="DD-L2-Participate">Participate</a>
+                                <ul class="mobile-dropdown-L2" id="participate">
+                                    <li class="L2"><a class="L2-link" href="participate/mailing-list.html">Mailing List
+                                            Sign Up</a></li>
+                                    <li class="L2"><a class="L2-link" href="participate/info-submission.html">Info
+                                            Submission Form</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -134,9 +151,7 @@
                     </li>
                 </ul>
             </navigation>
-
         </div>
-
     </header>
 
 
@@ -255,26 +270,24 @@
                 <div class="icon-box">
                     <a class="icon-link" href="#"><i class="fas fa-university"></i></a>
                     <p class="description">Lorem ipsum <a href="#">LAW</a> sit amet, consectetur adipiscing elit. Ut
-                        leo eros,
-                        ullamcorper sed <a href="#">RESOURCES</a>, condimentum ornare dui. Maecenas cursus justo non
-                        urna tempor egestas.
-                        Proin pellentesque vehicula arcu faucibus.</p>
+                        leo eros, ullamcorper sed <a href="#">RESOURCES</a>, condimentum ornare dui. Maecenas cursus
+                        justo non urna tempor egestas. Proin pellentesque vehicula arcu faucibus.</p>
                 </div>
             </div>
 
             <div class="community">
-                <h1 class="cheader">Community Driven</h1>
+                <h1 class="cheader">Community</h1>
                 <div class="icon-box">
                     <a class="icon-link" href="#"><i class="fas fa-users"></i></a>
                     <p class="description">Lorem ipsum dolor sit amet, consectetur <a>PEOPLE</a> elit. Ut leo eros,
                         ullamcorper sed dui in, condimentum ornare dui. <a>ORGANIZATIONS</a> cursus justo non urna
-                        tempor egestas.
-                        Proin pellentesque vehicula arcu faucibus.</p>
+                        tempor egestas. Proin pellentesque vehicula arcu faucibus.</p>
                 </div>
             </div>
 
         </div>
     </div>
+
 
     <!-- Section Two - Contribution Section ~ How to Participate -->
     <div class="sect-wrapper2">
@@ -316,25 +329,24 @@
         </div>
     </div>
 
-
-
+    <!-- ###### FOOTER ###### -->
     <footer>
         <div class="footer-wrapper">
             <div class="foot-sect1 foot">
                 <ul class="foot-list community foot1">
                     <li class="foot-sect-header">Community</li>
+                    <li>About Us</li>
                     <li>Network</li>
+                    <li>Organizations</li>
                     <li>Opportunities</li>
                     <li>Events</li>
-                    <li>About Us</li>
+                    
                 </ul>
                 <ul class="foot-list ADR foot1">
                     <li class="foot-sect-header">ADR Project</li>
                     <li>About</li>
                     <li>Maps</li>
                     <li>Country List</li>
-                    <li>Organizations</li>
-                    <li>Submission Forms</li>
                 </ul>
                 <ul class="foot-list educational foot1">
                     <li class="foot-sect-header">Educational Resources</li>
@@ -344,8 +356,9 @@
                 </ul>
                 <div class="contribute-follow foot1">
                     <ul class="foot-list contribute">
-                        <li class="foot-sect-header">Contribute</li>
-                        <li>Submission Forms</li>
+                        <li class="foot-sect-header">Participate</li>
+                        <li>Info Submission Form</li>
+                        <li>Mailing List Sign Up</li>
                     </ul>
                     <ul class="foot-list follow">
                         <li><i class="fab fa-linkedin"></i></li>

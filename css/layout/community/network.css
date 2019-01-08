@@ -1,0 +1,93 @@
+div.about-header p.network-lead {
+  padding: 3rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 75%;
+}
+
+div.network {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  padding: 4rem 2rem;
+}
+div.network div.user-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+div.network div.user-row i.fas {
+  font-size: 8rem;
+  color: #42a2aa;
+}
+div.network div.group-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div.network div.group-row i.fas {
+  font-size: 15rem;
+  color: #42a2aa;
+}
+div.network div.text-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div.network div.text-body p {
+  width: 60%;
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+div.social-network {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 0;
+}
+div.social-network h1 {
+  font-size: 6rem;
+  text-align: center;
+}
+div.social-network ul.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem 0;
+}
+div.social-network ul.social i {
+  font-size: 10rem;
+  color: #42a2aa;
+}
+div.social-network p {
+  font-size: 2rem;
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+
+div.blog {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+div.blog i.fa-blog {
+  font-size: 15rem;
+  padding: 1rem 0;
+  color: #42a2aa;
+  text-align: center;
+}
+div.blog p {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=network.css.map */

@@ -1,0 +1,76 @@
+@import "../../abstracts/variables"
+@import "../../abstracts/mfe"
+
+//About Banner
+div.about-header
+    p.network-lead
+        padding: 3rem 0
+        font-size: 2.5rem
+        text-align: center
+        width: 75%
+
+//Section Two ~ Network
+div.network
+    @include display(column)
+    @include sect
+    padding: 4rem 2rem
+    div.user-row
+        @include display(row)
+        justify-content: space-around
+        align-items: center
+        height: 15vh
+        i.fas
+            font-size: 8rem
+            color: $green
+
+    div.group-row
+        @include display(row)
+        justify-content: center
+        i.fas
+            font-size: 15rem
+            color: $green
+    div.text-body
+        @include display(row)
+        justify-content: center
+        p
+            width: 60%
+            text-align: center
+            font-size: 2.7rem
+
+//Section Two ~ Social Network
+div.social-network
+    @include display(column)
+    justify-content: center
+    padding: 4rem 0
+    h1
+        font-size: 6rem
+        text-align: center
+    ul.social
+        @include display(row)
+        flex-wrap: wrap
+        justify-content: space-around
+        padding: 3rem 0
+        i
+            font-size: 10rem
+            color: $green
+    p
+        font-size: 2rem
+        margin: auto
+        width: 75%
+        text-align: center
+        
+div.blog
+    @include display(column)
+    padding: 2rem 0
+    i.fa-blog
+        font-size: 15rem
+        padding: 1rem 0
+        color: $green
+        text-align: center
+    p
+        width: 75%
+        margin: auto
+        text-align: center
+        font-size: 2rem
+    
+        

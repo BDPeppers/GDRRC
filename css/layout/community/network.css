@@ -39,9 +39,13 @@ div.network div.text-body {
   justify-content: center;
 }
 div.network div.text-body p {
-  width: 60%;
+  width: 80%;
   text-align: center;
   font-size: 2.7rem;
+}
+
+div.sect2 {
+  padding: 5rem 0;
 }
 
 div.social-network {
@@ -88,6 +92,145 @@ div.blog p {
   margin: auto;
   text-align: center;
   font-size: 2rem;
+}
+
+div.events, div.opportunities {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  padding: 5rem 1rem;
+}
+div.events h1, div.opportunities h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+div.events div.spotlight-openings, div.opportunities div.spotlight-openings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.events div.spotlight-openings div.card, div.opportunities div.spotlight-openings div.card {
+  margin: 2rem 0;
+  min-height: 15vh;
+  height: auto;
+  position: relative;
+  width: 75%;
+}
+div.events div.spotlight-openings div.card h6.card-subtitle, div.opportunities div.spotlight-openings div.card h6.card-subtitle {
+  font-size: 2.5rem;
+  border-bottom: black solid 0.1rem;
+}
+div.events div.spotlight-openings div.card p.card-text, div.opportunities div.spotlight-openings div.card p.card-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+div.events div.spotlight-openings div.card a.card-link, div.opportunities div.spotlight-openings div.card a.card-link {
+  color: #42a2aa;
+  font-size: 1.5rem;
+}
+div.events div.event-posts, div.opportunities div.event-posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+div.events div.event-posts div.card, div.opportunities div.event-posts div.card {
+  position: relative;
+  width: 25vw;
+  min-height: 18vh;
+  height: auto;
+}
+div.events div.event-posts div.card h5.card-title, div.opportunities div.event-posts div.card h5.card-title {
+  font-size: 2.5rem;
+  font-weight: 200;
+  padding-bottom: 0.5rem;
+  border-bottom: black solid 0.1rem;
+  width: 75%;
+}
+div.events div.event-posts div.card h6.card-subtitle, div.opportunities div.event-posts div.card h6.card-subtitle {
+  font-size: 1.7rem;
+}
+div.events div.event-posts div.card p.card-text, div.opportunities div.event-posts div.card p.card-text {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+div.events div.event-posts div.card a.card-link, div.opportunities div.event-posts div.card a.card-link {
+  color: #42a2aa;
+  font-size: 1.5rem;
+}
+
+div.event-box, div.spotlight-box {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+}
+div.event-box p.event-text, div.event-box p.spotlight-text, div.spotlight-box p.event-text, div.spotlight-box p.spotlight-text {
+  width: 75%;
+  font-size: 1.7rem;
+  margin: auto;
+  text-align: center;
+}
+div.event-box h3, div.spotlight-box h3 {
+  text-align: center;
+  padding: 2rem 0;
+}
+div.event-box a.calendar-link, div.event-box a.openings-link, div.spotlight-box a.calendar-link, div.spotlight-box a.openings-link {
+  color: #42a2aa;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  div.jumbotron div.about-header p.network-lead {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  div.jumbotron div.about-header p.network-lead {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+
+  div.social-network p {
+    width: 80%;
+  }
+  div.social-network h1 {
+    font-size: 5rem;
+    padding: 0 1rem;
+  }
+  div.social-network ul.social i.fab {
+    font-size: 7rem;
+  }
+
+  div.blog i.fa-blog {
+    font-size: 12rem;
+  }
+  div.blog p {
+    width: 80%;
+  }
+
+  div.sect1 div.network div.user-row i.fa-user {
+    font-size: 5rem;
+  }
+  div.sect1 div.network div.group-row i.fa-users {
+    font-size: 8rem;
+  }
+  div.sect1 div.network div.text-body p.network-text {
+    font-size: 2.3rem;
+  }
+
+  div.events div.event-posts {
+    flex-wrap: wrap;
+  }
+  div.events div.event-posts div.card {
+    width: 40vw;
+    margin: 1rem;
+  }
 }
 
 /*# sourceMappingURL=network.css.map */

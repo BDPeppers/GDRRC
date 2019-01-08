@@ -72,4 +72,9 @@ div.form-group input.form-control, div.form-group select.form-control {
   font-size: 1.5rem;
 }
 
+a.list-group-item.active {
+  background-color: #42a2aa;
+  border-color: #42a2aa;
+}
+
 /*# sourceMappingURL=basis.css.map */

@@ -1,0 +1,64 @@
+@import "../../abstracts/variables"
+@import "../../abstracts/mfe"
+
+div.sect2
+    @include sect
+    @include display(column)
+    p.note
+        font-size: 2.5rem
+        font-weight: 300
+div.opportunities
+    justify-content: center
+    align-items: center
+
+div.o-table
+    min-height: 28vh
+    background-color: lighten(lightgray,12%)
+    border-radius: 1.5rem
+    padding: 1rem
+    @include display(row)
+    align-items: center
+    justify-content: center
+    div.row
+        align-items: center
+        justify-content: center
+    div.list-group
+        height: 25vh
+        a.list-group-item
+            color: black
+            height: 100%
+            @include display(column)
+            justify-content: center
+            font-size: 2rem
+        
+div.description
+    div.tab-pane
+        color: black
+        h1.job-title
+            font-size: 2.5rem
+        p.job-description
+            font-size: 1.7rem
+        a.apply-link
+            font-size: 2rem
+            color: $green
+
+nav.o-table-nav
+    @include display(row)
+    justify-content: center 
+    height: 10vh        
+ul.pagination
+    li.page-item
+        height: 5vh
+        width: 3vw
+        align-items: center
+        a.page-link
+            color: $green
+            text-align: center
+            font-size: 2rem
+    li.prev, li.next
+        a.page-link
+            font-weight: 700
+            color: $green
+    
+
+       

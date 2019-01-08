@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"events.css"}
+{"version":3,"sourceRoot":"","sources":["../../../sass/layout/community/events.sass","../../../sass/abstracts/mfe.sass","../../../sass/abstracts/variables.sass"],"names":[],"mappings":"AAKA;ECJI;EACA,gBDIiB;EACjB;ECHA;EACA;EACA;EDGA;;AACA;EACI;EACA;;AACJ;EACI;EACA;EACA;EACA;;AACJ;EACI,OEfA;EFgBA;EACA","file":"events.css"}

@@ -89,6 +89,11 @@ div.form-group input.form-control, div.form-group select.form-control {
   font-size: 1.5rem;
 }
 
+a.list-group-item.active {
+  background-color: #42a2aa;
+  border-color: #42a2aa;
+}
+
 footer {
   min-height: 15vh;
   height: auto;
@@ -775,6 +780,7 @@ div.about-banner div.jumbotron div.about-header {
 div.about-banner div.jumbotron div.about-header h1.display-4 {
   font-size: 5rem;
   text-align: center;
+  padding: 1.8rem 0;
 }
 div.about-banner div.jumbotron div.about-header p.lead {
   font-size: 2.5rem;
@@ -1031,9 +1037,13 @@ div.network div.text-body {
   justify-content: center;
 }
 div.network div.text-body p {
-  width: 60%;
+  width: 80%;
   text-align: center;
   font-size: 2.7rem;
+}
+
+div.sect2 {
+  padding: 5rem 0;
 }
 
 div.social-network {
@@ -1080,6 +1090,248 @@ div.blog p {
   margin: auto;
   text-align: center;
   font-size: 2rem;
+}
+
+div.events, div.opportunities {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  padding: 5rem 1rem;
+}
+div.events h1, div.opportunities h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+div.events div.spotlight-openings, div.opportunities div.spotlight-openings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.events div.spotlight-openings div.card, div.opportunities div.spotlight-openings div.card {
+  margin: 2rem 0;
+  min-height: 15vh;
+  height: auto;
+  position: relative;
+  width: 75%;
+}
+div.events div.spotlight-openings div.card h6.card-subtitle, div.opportunities div.spotlight-openings div.card h6.card-subtitle {
+  font-size: 2.5rem;
+  border-bottom: black solid 0.1rem;
+}
+div.events div.spotlight-openings div.card p.card-text, div.opportunities div.spotlight-openings div.card p.card-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+div.events div.spotlight-openings div.card a.card-link, div.opportunities div.spotlight-openings div.card a.card-link {
+  color: #42a2aa;
+  font-size: 1.5rem;
+}
+div.events div.event-posts, div.opportunities div.event-posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+div.events div.event-posts div.card, div.opportunities div.event-posts div.card {
+  position: relative;
+  width: 25vw;
+  min-height: 18vh;
+  height: auto;
+}
+div.events div.event-posts div.card h5.card-title, div.opportunities div.event-posts div.card h5.card-title {
+  font-size: 2.5rem;
+  font-weight: 200;
+  padding-bottom: 0.5rem;
+  border-bottom: black solid 0.1rem;
+  width: 75%;
+}
+div.events div.event-posts div.card h6.card-subtitle, div.opportunities div.event-posts div.card h6.card-subtitle {
+  font-size: 1.7rem;
+}
+div.events div.event-posts div.card p.card-text, div.opportunities div.event-posts div.card p.card-text {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+div.events div.event-posts div.card a.card-link, div.opportunities div.event-posts div.card a.card-link {
+  color: #42a2aa;
+  font-size: 1.5rem;
+}
+
+div.event-box, div.spotlight-box {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+}
+div.event-box p.event-text, div.event-box p.spotlight-text, div.spotlight-box p.event-text, div.spotlight-box p.spotlight-text {
+  width: 75%;
+  font-size: 1.7rem;
+  margin: auto;
+  text-align: center;
+}
+div.event-box h3, div.spotlight-box h3 {
+  text-align: center;
+  padding: 2rem 0;
+}
+div.event-box a.calendar-link, div.event-box a.openings-link, div.spotlight-box a.calendar-link, div.spotlight-box a.openings-link {
+  color: #42a2aa;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  div.jumbotron div.about-header p.network-lead {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  div.jumbotron div.about-header p.network-lead {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+
+  div.social-network p {
+    width: 80%;
+  }
+  div.social-network h1 {
+    font-size: 5rem;
+    padding: 0 1rem;
+  }
+  div.social-network ul.social i.fab {
+    font-size: 7rem;
+  }
+
+  div.blog i.fa-blog {
+    font-size: 12rem;
+  }
+  div.blog p {
+    width: 80%;
+  }
+
+  div.sect1 div.network div.user-row i.fa-user {
+    font-size: 5rem;
+  }
+  div.sect1 div.network div.group-row i.fa-users {
+    font-size: 8rem;
+  }
+  div.sect1 div.network div.text-body p.network-text {
+    font-size: 2.3rem;
+  }
+
+  div.events div.event-posts {
+    flex-wrap: wrap;
+  }
+  div.events div.event-posts div.card {
+    width: 40vw;
+    margin: 1rem;
+  }
+}
+div.sect2 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: column;
+}
+div.sect2 p.note {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+div.opportunities {
+  justify-content: center;
+  align-items: center;
+}
+
+div.o-table {
+  min-height: 28vh;
+  background-color: #f2f2f2;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+div.o-table div.row {
+  align-items: center;
+  justify-content: center;
+}
+div.o-table div.list-group {
+  height: 25vh;
+}
+div.o-table div.list-group a.list-group-item {
+  color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+div.description div.tab-pane {
+  color: black;
+}
+div.description div.tab-pane h1.job-title {
+  font-size: 2.5rem;
+}
+div.description div.tab-pane p.job-description {
+  font-size: 1.7rem;
+}
+div.description div.tab-pane a.apply-link {
+  font-size: 2rem;
+  color: #42a2aa;
+}
+
+nav.o-table-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10vh;
+}
+
+ul.pagination li.page-item {
+  height: 5vh;
+  width: 3vw;
+  align-items: center;
+}
+ul.pagination li.page-item a.page-link {
+  color: #42a2aa;
+  text-align: center;
+  font-size: 2rem;
+}
+ul.pagination li.prev a.page-link, ul.pagination li.next a.page-link {
+  font-weight: 700;
+  color: #42a2aa;
+}
+
+div.calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  padding: 4rem 0;
+}
+div.calendar h1.calendar-title {
+  text-align: center;
+  font-size: 3.5rem;
+}
+div.calendar p.note {
+  font-size: 1.7rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 1rem 0;
+}
+div.calendar i.fa-calendar {
+  color: #42a2aa;
+  text-align: center;
+  font-size: 20rem;
 }
 
 /*# sourceMappingURL=main.css.map */

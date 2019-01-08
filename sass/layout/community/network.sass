@@ -33,11 +33,13 @@ div.network
         @include display(row)
         justify-content: center
         p
-            width: 60%
+            width: 80%
             text-align: center
             font-size: 2.7rem
 
 //Section Two ~ Social Network
+div.sect2
+    padding: 5rem 0
 div.social-network
     @include display(column)
     justify-content: center
@@ -73,4 +75,123 @@ div.blog
         text-align: center
         font-size: 2rem
     
-        
+
+//Section Three ~ Events + Section Four ~ Opportunities
+div.events, div.opportunities
+    @include display(column)
+    @include sect
+    padding: 5rem 1rem
+    h1
+        font-size: 5rem
+        text-align: center
+        padding: 2rem 0
+    div.spotlight-openings
+        @include display(column)
+        justify-content: center
+        align-items: center
+        div.card
+            margin: 2rem 0
+            min-height: 15vh
+            height: auto
+            position: relative
+            width: 75%
+            h6.card-subtitle
+                font-size: 2.5rem
+                border-bottom: black solid .1rem
+            p.card-text
+                font-size: 1.5rem
+                font-weight: 300
+                padding: 1rem 0
+            a.card-link
+                color: $green
+                font-size: 1.5rem
+    div.event-posts
+        @include display(row)
+        justify-content: space-around
+        div.card
+            position: relative
+            width: 25vw
+            min-height: 18vh
+            height: auto
+            h5.card-title
+                font-size: 2.5rem
+                font-weight: 200
+                padding-bottom: .5rem
+                border-bottom: black solid .1rem
+                width: 75%
+            h6.card-subtitle
+                font-size: 1.7rem
+            p.card-text
+                margin: 1rem 0
+                font-size: 1.3rem
+            a.card-link
+                color: $green
+                font-size: 1.5rem
+
+div.event-box, div.spotlight-box
+    padding: 4rem 0
+    @include display(column)
+    p.event-text, p.spotlight-text
+        width: 75%
+        font-size: 1.7rem
+        margin: auto
+        text-align: center
+    h3
+        text-align: center
+        padding: 2rem 0
+    a.calendar-link, a.openings-link
+        color: $green
+        font-size: 2rem
+        font-weight: 400
+        text-align: center
+
+
+///Mobile View
+@media screen and (max-width: 1024px)
+    
+@media screen and (max-width: 800px) 
+    div.jumbotron
+        div.about-header
+            p.network-lead
+                font-size: 3rem
+@media screen and (max-width: 450px)
+    div.jumbotron
+        div.about-header
+            p.network-lead
+                font-size: 2.5rem
+                width: 90%
+
+    div.social-network
+        p
+            width: 80%
+        h1
+            font-size: 5rem
+            padding: 0 1rem
+        ul.social
+            i.fab
+                font-size: 7rem
+    div.blog
+        i.fa-blog
+            font-size: 12rem
+        p
+            width: 80%
+
+    div.sect1
+        div.network
+            div.user-row
+                i.fa-user
+                    font-size: 5rem
+            div.group-row
+                i.fa-users
+                    font-size: 8rem
+            div.text-body
+                p.network-text
+                    font-size: 2.3rem
+
+    div.events
+        div.event-posts
+            flex-wrap: wrap
+            div.card
+                width: 40vw
+                margin: 1rem  
+@media screen and (max-width: 375px)

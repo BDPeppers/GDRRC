@@ -1334,6 +1334,21 @@ div.calendar i.fa-calendar {
   font-size: 20rem;
 }
 
+div.law-form p {
+  font-size: 2rem;
+}
+
+div.form-group label {
+  font-size: 1.7rem;
+}
+
+div.sect2 {
+  padding: 5rem 1.5rem;
+}
+div.sect2 button.btn {
+  width: fit-content;
+}
+
 div.sect1 {
   padding: 6rem 0;
 }

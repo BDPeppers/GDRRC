@@ -1,3 +1,44 @@
+div.graduate-sect {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+}
+div.graduate-sect div.students {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div.graduate-sect div.students i.fa-user-graduate {
+  font-size: 8rem;
+  position: relative;
+  z-index: 1;
+}
+div.graduate-sect div.students i.bg {
+  position: relative;
+  z-index: -1;
+  font-size: 6rem;
+  margin-top: -1rem;
+}
+div.graduate-sect div.graduate-text {
+  padding: 3rem 1rem;
+}
+div.graduate-sect div.graduate-text p {
+  text-align: center;
+  font-size: 1.7rem;
+}
 
+div.more-info {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  padding: 5rem;
+}
+div.more-info h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+div.more-info h3 a {
+  color: #42a2aa;
+}
 
 /*# sourceMappingURL=degree-programs.css.map */

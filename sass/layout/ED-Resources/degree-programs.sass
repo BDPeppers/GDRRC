@@ -1,0 +1,32 @@
+@import "../../abstracts/variables"
+@import "../../abstracts/mfe"
+
+div.graduate-sect
+    @include sect
+    div.students
+        @include display(row)
+        justify-content: center
+        i.fa-user-graduate
+            font-size: 8rem
+            position: relative
+            z-index: 1
+        i.bg
+            position: relative
+            z-index: -1
+            font-size: 6rem
+            margin-top: -1rem
+
+    div.graduate-text
+        padding: 3rem 1rem
+        p
+            text-align: center
+            font-size: 1.7rem
+
+div.more-info
+    @include sect
+    padding: 5rem
+    h3
+        text-align: center
+        font-size: 2.5rem
+        a
+            color: $green

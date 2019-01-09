@@ -2,7 +2,7 @@ div.search-box {
   margin: 0 auto;
   width: 100%;
   max-width: 130rem;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 }
 div.search-box div.search-header h1 {
   font-size: 2.5rem;
@@ -35,7 +35,7 @@ div.search-form ul.letters li.page-item a.page-link {
 }
 
 div.search-form-results {
-  min-height: 15vh;
+  min-height: 35vh;
 }
 
 @media screen and (max-width: 700px) {

@@ -1,0 +1,14 @@
+@import "../../abstracts/variables"
+@import "../../abstracts/mfe"
+
+div.map-links
+    ul.map-link-list
+        @include display(row)
+        // justify-content: space-between
+        flex-wrap: wrap
+        align-items: center
+        li.map-link
+            margin: 1.5rem
+        a.map-btn
+            width: 15vh
+            font-size: 2rem

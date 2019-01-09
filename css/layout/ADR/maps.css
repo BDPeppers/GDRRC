@@ -1,3 +1,15 @@
-
+div.map-links ul.map-link-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+div.map-links ul.map-link-list li.map-link {
+  margin: 1.5rem;
+}
+div.map-links ul.map-link-list a.map-btn {
+  width: 15vh;
+  font-size: 2rem;
+}
 
 /*# sourceMappingURL=maps.css.map */

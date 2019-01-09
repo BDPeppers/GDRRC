@@ -78,4 +78,8 @@ a.list-group-item.active {
   border-color: #42a2aa;
 }
 
+a.list-group-item {
+  padding: 0.75rem 0.75rem;
+}
+
 /*# sourceMappingURL=basis.css.map */

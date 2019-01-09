@@ -81,4 +81,14 @@ ul.pagination li.prev a.page-link, ul.pagination li.next a.page-link {
   color: #42a2aa;
 }
 
+@media screen and (max-width: 450px) {
+  div.o-table div.list-group a.list-group-item {
+    font-size: 1.5rem;
+  }
+
+  div.description div.tab-pane p.job-description {
+    font-size: 1.3rem;
+  }
+}
+
 /*# sourceMappingURL=opportunities.css.map */

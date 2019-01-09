@@ -227,7 +227,10 @@ div.about-sect4 form div.form-group label {
     flex-basis: 45%;
   }
   div.sect3 div.about-sect3 div.text-center {
-    flex-basis: 48%;
+    flex-basis: 88%;
+  }
+  div.sect3 div.about-sect3 div.text-center div.card-body h5.card-title {
+    font-size: 2rem;
   }
 }
 

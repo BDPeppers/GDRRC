@@ -95,6 +95,10 @@ a.list-group-item.active {
   border-color: #42a2aa;
 }
 
+a.list-group-item {
+  padding: 0.75rem 0.75rem;
+}
+
 footer {
   min-height: 15vh;
   height: auto;
@@ -994,7 +998,10 @@ div.about-sect4 form div.form-group label {
     flex-basis: 45%;
   }
   div.sect3 div.about-sect3 div.text-center {
-    flex-basis: 48%;
+    flex-basis: 88%;
+  }
+  div.sect3 div.about-sect3 div.text-center div.card-body h5.card-title {
+    font-size: 2rem;
   }
 }
 div.about-header p.network-lead {
@@ -1314,6 +1321,15 @@ ul.pagination li.prev a.page-link, ul.pagination li.next a.page-link {
   color: #42a2aa;
 }
 
+@media screen and (max-width: 450px) {
+  div.o-table div.list-group a.list-group-item {
+    font-size: 1.5rem;
+  }
+
+  div.description div.tab-pane p.job-description {
+    font-size: 1.3rem;
+  }
+}
 div.search-box {
   margin: 0 auto;
   width: 100%;

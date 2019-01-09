@@ -1,0 +1,46 @@
+@import "../../abstracts/variables"
+@import "../../abstracts/mfe"
+
+div.glossary
+    @include sect
+    padding: 4rem 1rem
+
+div.g-box
+    h1
+        font-size: 2.5rem
+
+div.term-list-box
+    @include display(column)
+
+div.term-box
+    @include display(row)
+    h1.term
+        font-size: 1.7rem
+        flex-basis: 20%
+        @include display(column)
+        align-items: center
+        justify-content: center
+        border: black solid .1rem
+        border-right: none
+        height: 4rem
+        padding: .5rem
+    p.def
+        font-size: 1.6rem
+        flex-basis: 80%
+        min-height: 6rem
+        border: black solid .1rem
+        padding: 1rem
+
+    ///Mobile View
+@media screen and (max-width: 1024px)
+    
+@media screen and (max-width: 800px) 
+
+@media screen and (max-width: 650px)
+    
+    div.term-box
+        @include display(column)
+        h1.term
+            border-right: black solid .1rem !important
+    
+@media screen and (max-width: 375px)

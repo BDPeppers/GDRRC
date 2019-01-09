@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"glossary.css"}
+{"version":3,"sourceRoot":"","sources":["../../../sass/layout/ed-resources/glossary.sass","../../../sass/abstracts/mfe.sass"],"names":[],"mappings":"AAGA;ECCI;EACA;EACA;EDDA;;;AAGA;EACI;;;AAER;ECVI;EACA,gBDUiB;;;AAErB;ECbI;EACA,gBDaiB;;AACjB;EACI;EACA;ECjBJ;EACA,gBDiBqB;EACjB;EACA;EACA;EACA;EACA;EACA;;AACJ;EACI;EACA;EACA;EACA;EACA;;;AAOR;EAEI;ICvCA;IACA,gBDuCqB;;EACjB;IACI","file":"glossary.css"}

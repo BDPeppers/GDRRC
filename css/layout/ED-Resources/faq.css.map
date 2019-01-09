@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"faq.css"}
+{"version":3,"sourceRoot":"","sources":["../../../sass/layout/ed-resources/faq.sass","../../../sass/abstracts/mfe.sass"],"names":[],"mappings":"AAGA;ECCI;EACA;EACA;;ADDA;EACI;EACA;;;AAER;ECRI;EACA,gBDQiB;EACjB;ECPA;EACA;EACA;;ADOA;EACI;;AACA;EACI;EACA;;AACJ;EACI","file":"faq.css"}

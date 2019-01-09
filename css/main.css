@@ -1552,6 +1552,35 @@ div.map-links ul.map-link-list a.map-btn {
   font-size: 2rem;
 }
 
+div.FAQ-header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+}
+div.FAQ-header h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+div.Q-list {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 1rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+}
+div.Q-list div.FAQ {
+  padding: 2rem 0;
+}
+div.Q-list div.FAQ h4.question {
+  font-size: 2rem;
+  color: #1e4a4e;
+}
+div.Q-list div.FAQ p.answer {
+  font-size: 1.7rem;
+}
+
 div.glossary {
   margin: 0 auto;
   width: 100%;

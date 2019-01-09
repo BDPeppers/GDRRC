@@ -28,6 +28,7 @@ form.mail-list div.form-group label.email {
 }
 form.mail-list div.form-group small {
   font-size: 1rem;
+  padding: 0.375rem 0.75rem;
 }
 
 div.interests {
@@ -47,6 +48,7 @@ div.interests div.checkboxes {
 div.interests label.form-check-label {
   display: flex;
   flex-direction: row;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=mailing-list.css.map */

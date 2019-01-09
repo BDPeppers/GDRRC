@@ -8,7 +8,8 @@ div.map-links ul.map-link-list li.map-link {
   margin: 1.5rem;
 }
 div.map-links ul.map-link-list a.map-btn {
-  width: 15vh;
+  width: fit-content;
+  padding: 1.5rem;
   font-size: 2rem;
 }
 

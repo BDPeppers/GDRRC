@@ -1372,6 +1372,10 @@ div.search-form-results {
   min-height: 35vh;
 }
 
+select.custom-select {
+  margin: 2rem 0;
+}
+
 @media screen and (max-width: 700px) {
   div.search-form ul.letters li.page-item {
     flex-basis: 10%;
@@ -1550,7 +1554,8 @@ div.map-links ul.map-link-list li.map-link {
   margin: 1.5rem;
 }
 div.map-links ul.map-link-list a.map-btn {
-  width: 15vh;
+  width: fit-content;
+  padding: 1.5rem;
   font-size: 2rem;
 }
 
@@ -1720,6 +1725,7 @@ form.mail-list div.form-group label.email {
 }
 form.mail-list div.form-group small {
   font-size: 1rem;
+  padding: 0.375rem 0.75rem;
 }
 
 div.interests {
@@ -1739,6 +1745,7 @@ div.interests div.checkboxes {
 div.interests label.form-check-label {
   display: flex;
   flex-direction: row;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+@import "../../abstracts/variables"
+@import "../../abstracts/mfe"
+
+div.adr-about
+    @include sect
+    @include display(column)
+    justify-content: center
+    align-content: center
+    div.world
+        @include sect
+        @include display(row)
+        justify-content: center
+        img
+           width: 75vw
+           height: 75%
+    div.adr-about-bio
+        padding: 4rem 2rem
+        p
+            margin: auto
+            text-align: center
+            width: 75%
+            font-size: 1.7rem

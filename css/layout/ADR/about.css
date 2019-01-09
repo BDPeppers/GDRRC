@@ -1,3 +1,32 @@
-
+div.adr-about {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+div.adr-about div.world {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div.adr-about div.world img {
+  width: 75vw;
+  height: 75%;
+}
+div.adr-about div.adr-about-bio {
+  padding: 4rem 2rem;
+}
+div.adr-about div.adr-about-bio p {
+  margin: auto;
+  text-align: center;
+  width: 75%;
+  font-size: 1.7rem;
+}
 
 /*# sourceMappingURL=about.css.map */

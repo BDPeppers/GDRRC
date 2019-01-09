@@ -20,3 +20,86 @@ div.adr-about
             text-align: center
             width: 75%
             font-size: 1.7rem
+
+//Base Styles for sections 2-4
+div.adr-sect
+    @include display(row)
+    div.left-to-right
+        @include sect
+        @include display(row)
+        padding: 4rem 2rem
+        div.bio
+            flex-basis: 50%
+            h1
+                font-size: 2.5rem
+            p
+                font-size: 1.7rem
+            a
+                font-size: 2rem
+                color: $green
+        div.sect-pic
+            flex-basis: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            i
+                color: $green
+                font-size: 15rem
+    div.right-to-left
+        @include sect
+        padding: 4rem 2rem
+        @include display(row)
+        div.bio
+            flex-basis: 50%
+            h1
+                font-size: 2.5rem
+                
+                padding: .5rem 0
+            p
+                font-size: 1.7rem
+            a
+                font-size: 2rem
+                color: $green
+                
+        div.sect-pic
+            flex-basis: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            i
+                color: $green
+                font-size: 15rem
+
+div.info-box
+    @include sect
+    @include display(column)
+    padding: 6rem 1rem
+    justify-content: center
+    align-items: center
+    h1
+        text-align: center
+        font-size: 3.5rem
+    p
+        text-align: center
+        font-size: 1.7rem
+    a
+        font-size: 2rem
+        color: $green
+
+///Mobile View
+@media screen and (max-width: 1024px)
+    
+@media screen and (max-width: 800px) 
+
+@media screen and (max-width: 450px)
+    div.adr-sect
+        div.left-to-right
+            @include display(column)
+            div.sect-pic
+                padding: 3rem 0
+        div.right-to-left
+            @include display(column-reverse)
+            div.sect-pic
+                padding: 3rem 0
+    
+@media screen and (max-width: 375px)

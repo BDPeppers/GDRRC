@@ -29,4 +29,112 @@ div.adr-about div.adr-about-bio p {
   font-size: 1.7rem;
 }
 
+div.adr-sect {
+  display: flex;
+  flex-direction: row;
+}
+div.adr-sect div.left-to-right {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 2rem;
+}
+div.adr-sect div.left-to-right div.bio {
+  flex-basis: 50%;
+}
+div.adr-sect div.left-to-right div.bio h1 {
+  font-size: 2.5rem;
+}
+div.adr-sect div.left-to-right div.bio p {
+  font-size: 1.7rem;
+}
+div.adr-sect div.left-to-right div.bio a {
+  font-size: 2rem;
+  color: #42a2aa;
+}
+div.adr-sect div.left-to-right div.sect-pic {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.adr-sect div.left-to-right div.sect-pic i {
+  color: #42a2aa;
+  font-size: 15rem;
+}
+div.adr-sect div.right-to-left {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: row;
+}
+div.adr-sect div.right-to-left div.bio {
+  flex-basis: 50%;
+}
+div.adr-sect div.right-to-left div.bio h1 {
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+div.adr-sect div.right-to-left div.bio p {
+  font-size: 1.7rem;
+}
+div.adr-sect div.right-to-left div.bio a {
+  font-size: 2rem;
+  color: #42a2aa;
+}
+div.adr-sect div.right-to-left div.sect-pic {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.adr-sect div.right-to-left div.sect-pic i {
+  color: #42a2aa;
+  font-size: 15rem;
+}
+
+div.info-box {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+div.info-box h1 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+div.info-box p {
+  text-align: center;
+  font-size: 1.7rem;
+}
+div.info-box a {
+  font-size: 2rem;
+  color: #42a2aa;
+}
+
+@media screen and (max-width: 450px) {
+  div.adr-sect div.left-to-right {
+    display: flex;
+    flex-direction: column;
+  }
+  div.adr-sect div.left-to-right div.sect-pic {
+    padding: 3rem 0;
+  }
+  div.adr-sect div.right-to-left {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  div.adr-sect div.right-to-left div.sect-pic {
+    padding: 3rem 0;
+  }
+}
+
 /*# sourceMappingURL=about.css.map */

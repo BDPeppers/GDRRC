@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"organizations.css"}
+{"version":3,"sourceRoot":"","sources":["../../../sass/layout/community/organizations.sass","../../../sass/abstracts/mfe.sass"],"names":[],"mappings":"AAGA;ECCI;EACA;EACA;EDDA;;AAGI;EACI;;AACJ;EACI;;;AAEZ;ECZI;EACA,gBDYiB;EACjB;EACA;;AAEA;EACI;;AACJ;EACI;ECpBJ;EACA,gBDoBqB;EACjB;;AACA;EACI;;AACA;EACI;EACA;;;AAEhB;EACI;;;AAIJ;EAGY;IACI","file":"organizations.css"}

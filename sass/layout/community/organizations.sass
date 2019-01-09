@@ -1,0 +1,43 @@
+@import "../../abstracts/variables"
+@import "../../abstracts/mfe"
+
+div.search-box
+    @include sect
+    padding: 0 1rem
+    div.search-header
+        
+        h1
+            font-size: 2.5rem
+        p
+            font-size: 1.7rem
+    
+div.search-form
+    @include display(column)
+    justify-content: center
+    align-items: flex-start
+    
+    nav
+        width: 100%
+    ul.letters
+        width: 100%
+        @include display(row)
+        flex-wrap: wrap
+        li.page-item
+            flex-basis: 3.8%
+            a.page-link
+                padding: .5rem 0
+                text-transform: uppercase 
+
+div.search-form-results
+    min-height: 15vh
+
+@media screen and (max-width: 1024px)
+    
+@media screen and (max-width: 700px) 
+    div.search-form
+        ul.letters
+            li.page-item
+                flex-basis: 10%
+@media screen and (max-width: 450px)
+    
+@media screen and (max-width: 375px)

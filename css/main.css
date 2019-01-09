@@ -1295,9 +1295,13 @@ nav.o-table-nav {
   height: 10vh;
 }
 
+ul.pagination {
+  display: flex;
+  flex-direction: row;
+}
 ul.pagination li.page-item {
+  flex-basis: 10%;
   height: 5vh;
-  width: 3vw;
   align-items: center;
 }
 ul.pagination li.page-item a.page-link {
@@ -1310,6 +1314,51 @@ ul.pagination li.prev a.page-link, ul.pagination li.next a.page-link {
   color: #42a2aa;
 }
 
+div.search-box {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  padding: 0 1rem;
+}
+div.search-box div.search-header h1 {
+  font-size: 2.5rem;
+}
+div.search-box div.search-header p {
+  font-size: 1.7rem;
+}
+
+div.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+div.search-form nav {
+  width: 100%;
+}
+div.search-form ul.letters {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div.search-form ul.letters li.page-item {
+  flex-basis: 3.8%;
+}
+div.search-form ul.letters li.page-item a.page-link {
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+div.search-form-results {
+  min-height: 15vh;
+}
+
+@media screen and (max-width: 700px) {
+  div.search-form ul.letters li.page-item {
+    flex-basis: 10%;
+  }
+}
 div.calendar {
   display: flex;
   flex-direction: column;

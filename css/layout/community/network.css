@@ -100,12 +100,11 @@ div.events, div.opportunities {
   margin: 0 auto;
   width: 100%;
   max-width: 130rem;
-  padding: 5rem 1rem;
 }
 div.events h1, div.opportunities h1 {
   font-size: 5rem;
   text-align: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 div.events div.spotlight-openings, div.opportunities div.spotlight-openings {
   display: flex;
@@ -137,6 +136,7 @@ div.events div.event-posts, div.opportunities div.event-posts {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 4rem 0;
 }
 div.events div.event-posts div.card, div.opportunities div.event-posts div.card {
   position: relative;
@@ -164,7 +164,7 @@ div.events div.event-posts div.card a.card-link, div.opportunities div.event-pos
 }
 
 div.event-box, div.spotlight-box {
-  padding: 4rem 0;
+  padding: 6rem 0;
   display: flex;
   flex-direction: column;
 }

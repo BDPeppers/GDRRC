@@ -397,7 +397,6 @@ navigation.mobile-nav ul.mobile-dropdown-L2 {
   }
   navigation.mobile-nav .m-nav-link a.menu-btn {
     padding-left: 0.5rem;
-    height: 100%;
     display: flex;
     align-items: center;
   }

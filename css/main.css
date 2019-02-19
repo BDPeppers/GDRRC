@@ -579,7 +579,7 @@ div.arrow-wrapper {
   background: linear-gradient(0deg, rgba(66, 162, 170, 0.25) 0%, white 97%);
 }
 
-.sect1 .social-blog, .sect1 .events, .sect1 .knowledge, .sect1 .community {
+.sect1 .social-blog, .sect1 .events, .sect1 .knowledge, .sect1 .community, .sect1 .gdrrc-blog, .sect1 .opportunities {
   height: 100%;
   width: 50%;
   display: flex;
